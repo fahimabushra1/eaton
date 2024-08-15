@@ -4,6 +4,7 @@ import AppDownload from '../components/home/AppDownload';
 import Categories from '../components/home/Categories';
 import Delivery from '../components/home/Delivery';
 import Packaging from '../components/home/Packaging';
+import Offers from '../components/home/Offers';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            <Categories/>
            <Delivery/>
            <Packaging/>
+           <Offers/>
         </div>
     );
 };
