@@ -3,7 +3,7 @@ import avatar from "../../assets/images/Avatar.png";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-black text-white rounded-b-3xl mx-8">
+            <div className="navbar bg-black text-white rounded-b-3xl">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const Navbar = () => {
 
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Eaton.</a>
+    <a className="btn btn-ghost text-2xl font-bold">Eaton</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -42,7 +42,7 @@ const Navbar = () => {
       <li><Link>Restaurants</Link></li>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end pr-4">
     <Link><img src={avatar} alt="avatar" /></Link>
   </div>
 </div>

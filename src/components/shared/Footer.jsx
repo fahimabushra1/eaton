@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex justify-center items-center"><img className="w-32 -mt-12 z-10" src={chefLogo} alt="chef logo" /></div>
             <h2 className="text-center">enjoy <span>3000+</span>foods from <span>400</span>restaurants</h2>
        
-            <div className="flex justify-center items-center"><button className="bg-black rounded-3xl py-1 px-4 text-white inline-flex">order now<img src={caretRight} alt="caret right icon" /></button>
+            <div className="flex justify-center items-center"><button className="bg-black rounded-3xl py-1 px-4 text-white inline-flex">order now<img className="self-center" src={caretRight} alt="caret right icon" /></button>
             </div>
             <div className="absolute top-0"><img src={bgEdge1} alt="bgEdge1 image" /></div>
             <div className="absolute top-2 right-4"><img src={domino} alt="domino logo" /></div>

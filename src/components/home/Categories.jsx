@@ -5,9 +5,11 @@ import pickingFrenchFry from "../../assets/images/picking-frenchFry2.png"
 
 const Categories = () => {
     return (
-        <div>
+        <div className="my-24">
            <div className='flex justify-center items-center gap-4'>
-                 <div><h2>our best delivery categories</h2></div>
+                 <div className="text-3xl capitalize">
+                    <h2>our <span className="text-orange-500">best delivered</span><br /> categories</h2>
+                </div>
                  <div><p>it;s not just about bringing you good food from the restaurants, we deliver you experience.</p></div>
            </div>
            <div className="grid grid-cols-3 gap-4 relative">
