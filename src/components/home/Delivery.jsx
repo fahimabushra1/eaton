@@ -10,7 +10,7 @@ const Delivery = () => {
         <div>
            <div className="relative py-24 mx-8 bg-black text-white flex justify-between my-4">
                 <div className="ml-24">
-                    <h2 className="text-3xl font-bold capitalize">fastest food <br /> <span className="text-orange-500">delivery</span> in town</h2>
+                    <h2 className="text-3xl font-bold">Fastest food <br /> <span className="text-orange-500">Delivery</span> in town</h2>
                     <p className="text-sm mt-4">get your dream order fresh steam <br /> hot at 20min break time</p>
                 </div>
                 <div className="ml-16"><img src={chefLogo} alt="chef logo" /></div>
@@ -30,8 +30,8 @@ const Delivery = () => {
                         </div>
                     </div>
                 </div>
-                <div className="absolute -bottom-16 left-96 z-10">
-                    <img src={steamPizza} alt="steam pizza" />
+                <div className="absolute -bottom-16 left-96 z-10 shadow-amber-700 shadow-2xl">
+                    <img className="shadow-2xl shadow-slate-600" src={steamPizza} alt="steam pizza" />
                 </div>
                 <div className="absolute -top-24 right-12 z-10"><img src={deliveryDrone} alt="drone image" /></div>
                 <div className="absolute top-0"><img src={bgEdge1} alt="bgEdge1 image" /></div>
