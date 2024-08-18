@@ -5,6 +5,7 @@ import logo3 from "../../assets/images/logo3.png";
 import logo4 from "../../assets/images/logo-4.png";
 import search from "../../assets/images/search.png";
 import playIcon from "../../assets/images/Play icons.png";
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -24,7 +25,7 @@ const Banner = () => {
                     </div>
                  </div>
                  <div className="flex justify-center items-center gap-4 mt-4">
-                     <div className="bg-[#198754] text-white p-4 rounded-3xl"><button className="inline-flex"><img className="border-r-2 border-white self-center mr-2" src={search} alt="search icon" />find restaurants</button></div>
+                     <div className="btn bg-[#198754] text-white p-4 rounded-3xl"><button className="inline-flex"><img className="border-r-2 border-white self-center mr-2" src={search} alt="search icon" /><Link to={"dashboard"}></Link>Find Restaurants</button></div>
                     
                      <div className="px-4 py-1 rounded-3xl">
                           <img className="inline-flex" src={playIcon} alt="video player icon" />
