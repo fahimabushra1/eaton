@@ -30,7 +30,7 @@ const FavouriteCuisines = () => {
                 </div>
                 <div className="flex justify-center items-center bg-[#12CBC4] hover:bg-[#ED4C67] py-4 gap-2 rounded-xl">
                    <div><BiBowlRice className="text-3xl" /></div>
-                   <div className="font-semibold"><button>Deshio</button></div>
+                   <div className="font-semibold"><button>Deshi food</button></div>
                 </div>
             </div>
         </div>
