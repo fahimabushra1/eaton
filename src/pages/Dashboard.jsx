@@ -1,14 +1,13 @@
 import burger from "../assets/images/burgerWithoutBG1.png"
-import caretRight from "../assets/images/Caret right.png"
 import FavouriteCuisines from "../components/dashboard/FavouriteCuisines";
 import HomeChefs from "../components/dashboard/HomeChefs";
 import SearchInput from "../components/dashboard/SearchInput";
 
 const Dashboard = () => {
     return (
-        <div className="px-2 pt-4 w-3/4 bg-[#c0c7ee]">
+        <div className="pl-2 pt-4  bg-[#c0c7ee]">
           <SearchInput/>
-      <div className="bg-white overflow-hidden mt-4 rounded-3xl">
+      <div className="bg-white overflow-hidden mt-4 rounded-3xl mr-4">
       <div className='flex justify-center items-center gap-2'>
         <div><img className="w-52" src={burger} alt="burger image" /></div>
         <div>

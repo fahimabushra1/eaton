@@ -6,7 +6,7 @@ import { PiBreadThin, PiHamburger } from "react-icons/pi";
 
 const FavouriteCuisines = () => {
     return (
-        <div className="bg-white p-4 rounded-2xl mt-4">
+        <div className="p-4 rounded-2xl mt-4">
           <div className="mb-4">
           <h2 className="text-3xl font-bold">Your favourite cuisines</h2>
           <p>Select category you'd like to eat from</p>

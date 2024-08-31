@@ -40,6 +40,7 @@ const Navbar = () => {
     <li className='text-xl'><Link>Services</Link></li>
       <li className='text-xl'><Link>Offers</Link></li>
       <li className='text-xl'><Link>Map</Link></li>
+      <li><Link to={"login"}>login</Link></li>
       <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
