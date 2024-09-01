@@ -8,6 +8,7 @@ const LoginRegistrationLayout = () => {
         <div>
            <div className="navbar bg-base-100">
                <ul className="menu menu-horizontal px-1">
+                     <li><Link to={"/"} className="btn btn-ghost text-red-500 font-bold text-xl">Home</Link></li>
                      <li><Link to={"login"} className="btn btn-ghost text-red-500 font-bold text-xl">Login</Link></li>
                       <li><Link to={"register"} className="btn btn-ghost text-red-500 font-bold text-xl">Sign Up</Link></li>
                </ul>

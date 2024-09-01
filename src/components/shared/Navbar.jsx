@@ -1,7 +1,14 @@
 import { CiHeart } from 'react-icons/ci';
 import { TbWorld } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import useAuth from "../../hooks/useAuth";
 const Navbar = () => {
+
+  const {logOut, user}= useAuth();
+
+  const handleLogout = async ()=>{
+    await logOut()
+  }
     return (
         <div>
             <div className="navbar bg-black text-white rounded-b-3xl">
@@ -40,7 +47,6 @@ const Navbar = () => {
     <li className='text-xl'><Link>Services</Link></li>
       <li className='text-xl'><Link>Offers</Link></li>
       <li className='text-xl'><Link>Map</Link></li>
-      <li><Link to={"login"}>login</Link></li>
       <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
@@ -95,7 +101,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        {
+         user?
+         <>
+         <span className="text-white mr-4">{user?.email}</span>
+         <button onClick={handleLogout} className="btn mr-2">Log out</button>
+         </>
+         :
+        <Link to= "/login" className="mx-4">Login</Link>
+       }
       </ul>
     </div>
     <li>

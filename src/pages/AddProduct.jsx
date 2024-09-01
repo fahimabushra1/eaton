@@ -7,12 +7,18 @@ const AddProduct = () => {
       
           const form = e.target;
        const name = form.productName.value;
-       const brand = form.brandName.value;
-       const price = form.price.value;
+       const restaurant = form.restaurantName.value;
+       const address = form.address.value;
+       const deliveryCost = form.deliveryCost.value;
+       const deliveryTime = form.deliveryTime.value;
+       const previousPrice = form.previousPrice.value;
+       const presentPrice = form.presentPrice.value;
        const category = form.category.value;
-       const size = form.size.value;
+       const popularity = form.popularity.value;
+       const description = form.description.value;
+       const distance = form.distance.value;
        const img = form.img.value;
-       console.log(name,brand,price,category,img,size);
+       console.log(name,description,address,previousPrice,presentPrice,category,img,popularity,restaurant,deliveryCost,deliveryTime,distance);
   
     //    const data ={name,category,brand,price,size,img};
   
@@ -35,47 +41,83 @@ const AddProduct = () => {
         }
     return (
         <div>
-            <h1 className="text-5xl text-center text-[#431407] my-8 font-bold">Update Product</h1>
+            <h1 className="text-5xl text-center text-[#431407] my-8 font-bold">add Product</h1>
           <form onSubmit={handleSubmit} className="card-body w-full">
           <div className="flex justify-center gap-4 bg-base-100 shadow-2xl p-12">
          <div className="w-1/2">
          <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Name</span>
+                <span className="label-text">Restaurant Name</span>
+              </label>
+              <input type="text" name="restaurantName" placeholder="restaurant name" className="input input-bordered" required />
+            </div>
+         <div className="form-control w-full">
+              <label className="label">
+                <span className="label-text">Food Name</span>
               </label>
               <input type="text" name="productName" placeholder="product name" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Brand Name</span>
+                <span className="label-text">Description</span>
               </label>
-              <input type="text" name="brandName" placeholder="brand name" className="input input-bordered" required />
+              <input type="text" name="description" placeholder="description" className="input input-bordered" required />
               </div>
+         <div className="form-control w-full">
+              <label className="label">
+                <span className="label-text">Previous Price</span>
+              </label>
+              <input type="number" name="previousPrice" placeholder="previous price" className="input input-bordered" required />
+            </div>
+         <div className="form-control w-full">
+              <label className="label">
+                <span className="label-text">Delivery Cost</span>
+              </label>
+              <input type="text" name="deliveryCost" placeholder="delivery cost" className="input input-bordered" required />
+            </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Price</span>
+                <span className="label-text">Distance</span>
               </label>
-              <input type="number" name="price" placeholder="price" className="input input-bordered" required />
+              <input type="text" name="distance" placeholder="distance" className="input input-bordered" required />
               </div>
          </div>
            <div className="w-1/2">
            <div className="form-control">
               <label className="label">
-                <span className="label-text">Category Name</span>
+                <span className="label-text">Address</span>
               </label>
-              <input type="text" name="category" placeholder="category" className="input input-bordered" required />
+              <input type="text" name="address" placeholder="address" className="input input-bordered" required />
             </div>
-            <div className="form-control">
+           <div className="form-control">
               <label className="label">
-                <span className="label-text">Size</span>
+                <span className="label-text">Cuisine type</span>
               </label>
-              <input type="text" name="size" placeholder="size" className="input input-bordered" required />
+              <input type="text" name="category" placeholder="cuisine type+" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Image</span>
               </label>
-              <input type="text" name="img" placeholder="image URL" className="input input-bordered" required />
+              <input type="file" name="img" placeholder="image URL" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Present Price</span>
+              </label>
+              <input type="number" name="presentPrice" placeholder="present price" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Delivery Time</span>
+              </label>
+              <input type="text" name="deliveryTime" placeholder="delivery time" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Popularity</span>
+              </label>
+              <input type="text" name="popularity" placeholder="popularity" className="input input-bordered" required />
             </div>
            </div>
           </div>
