@@ -1,9 +1,9 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {  useLocation, useNavigate } from "react-router-dom";
 import GoogleLogin from "../components/login-registration/GoogleLogin";
 import useAuth from "../hooks/useAuth";
 import { useEffect } from "react";
-import chickenFry from "../assets/images/sALADwITHOUTImg.png"
-import fruits from "../assets/images/FRUITSwITHOTbg.png"
+import salad from "../assets/images/sALADwITHOUTImg.png"
+import burger from "../assets/images/burgerWithoutBG1.png"
 import pizza from "../assets/images/pizzaWithout bg.png"
 import veggies from "../assets/images/veggiesWithoutBG.png"
 // import FbLogin from "../components/login-registration/FbLogin";
@@ -34,7 +34,7 @@ useEffect(()=>{
 
     return (
         <>
-        <div className="hero min-h-screen">
+        <div className="hero min-h-screen -mt-20">
         <div className="hero-content flex-row lg:flex-row-reverse gap-8">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-2">Login</h1>
@@ -64,20 +64,15 @@ useEffect(()=>{
          <GoogleLogin/>
          {/* <FbLogin/> */}
         </div>
-        <div>
-          <p>
-            New here?<Link to='/register'className="text-red-500"> Register</Link>
-          </p>
-        </div>
             </form>
           </div>
         </div>
       </div>
       <div>
-        <img className="w-60 absolute top-0 left-0" src={chickenFry} alt="" />
-        <img className="w-80 absolute top-10 right-0" src={pizza} alt="" />
-        <img className="w-40 absolute bottom-0 left-0" src={fruits} alt="" />
-        <img className="w-40 absolute bottom-40 left-0" src={veggies} alt="" />
+        <img className="w-60 absolute bottom-0 left-44 -z-10" src={salad} alt="salad" />
+        <img className="w-80 absolute top-10 right-0" src={pizza} alt="pizza" />
+        <img className="w-40 absolute top-20 left-0" src={burger} alt="burger" />
+        <img className="w-40 absolute top-20 right-96 -z-10" src={veggies} alt="veggies" />
       </div>
       </>
     );
