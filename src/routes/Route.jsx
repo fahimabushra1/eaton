@@ -21,6 +21,11 @@ export const router = createBrowserRouter(
                     path: "/",
                     element: <Home/>,
                  },
+                //  {
+                //     path: "/products/:id",
+                //     element: <ProductDetails/>,
+                //     loader:({params})=>fetch(`http://localhost:5173/coffees/${params.id}`),
+                //  },
             ]
         },
         {

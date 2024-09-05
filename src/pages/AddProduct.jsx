@@ -6,37 +6,37 @@ const AddProduct = () => {
           e.preventDefault();
       
           const form = e.target;
-       const name = form.productName.value;
-       const restaurant = form.restaurantName.value;
+       const food_name = form.food_name.value;
+       const restaurant_name = form.restaurant_name.value;
        const address = form.address.value;
-       const deliveryCost = form.deliveryCost.value;
-       const deliveryTime = form.deliveryTime.value;
-       const previousPrice = form.previousPrice.value;
-       const presentPrice = form.presentPrice.value;
-       const category = form.category.value;
+       const delivery_cost = form.delivery_cost.value;
+       const delivery_time = form.delivery_time.value;
+       const previous_cost = form.previous_cost.value;
+       const previous_price = form.previous_price.value;
+       const cuisine_type = form.cuisine_type.value;
        const popularity = form.popularity.value;
-       const description = form.description.value;
+       const food_description = form.food_description.value;
        const distance = form.distance.value;
-       const img = form.img.value;
-       console.log(name,description,address,previousPrice,presentPrice,category,img,popularity,restaurant,deliveryCost,deliveryTime,distance);
+       const image = form.image.value;
+       console.log(food_name,food_description,address,previous_cost,previous_price,cuisine_type,image,popularity,restaurant_name,delivery_cost,delivery_time,distance);
   
-    //    const data ={name,category,brand,price,size,img};
+       const data ={food_name,food_description,address,previous_cost,previous_price,cuisine_type,image,popularity,restaurant_name,delivery_cost,delivery_time,distance};
   
-    //    await fetch("http://localhost:5000/coffees",{
-    //       method: "POST",
-    //       headers: {
-    //           "Content-type": "application/json",
-    //              authorization: `Bearer ${token}`
-    //       },
-    //       body: JSON.stringify(data),})
-    //       .then((res) =>res.json())
-    //       .then((data) =>{
-    //         toast.success('data added successfully');
-    //         console.log(data)
-    //         form.reset()})
-    //       .catch((err) => {
-    //         console.log(err.message);
-    //      });
+       await fetch("http://localhost:5000/food",{
+          method: "POST",
+          headers: {
+              "Content-type": "application/json",
+                //  authorization: `Bearer ${token}`
+          },
+          body: JSON.stringify(data),})
+          .then((res) =>res.json())
+          .then((data) =>{
+            // toast.success('data added successfully');
+            console.log(data)
+            form.reset()})
+          .catch((err) => {
+            console.log(err.message);
+         });
           
         }
     return (
@@ -49,31 +49,31 @@ const AddProduct = () => {
               <label className="label">
                 <span className="label-text">Restaurant Name</span>
               </label>
-              <input type="text" name="restaurantName" placeholder="restaurant name" className="input input-bordered" required />
+              <input type="text" name="restaurant_name" placeholder="restaurant name" className="input input-bordered" required />
             </div>
          <div className="form-control w-full">
               <label className="label">
                 <span className="label-text">Food Name</span>
               </label>
-              <input type="text" name="productName" placeholder="product name" className="input input-bordered" required />
+              <input type="text" name="food_name" placeholder="product name" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Description</span>
               </label>
-              <input type="text" name="description" placeholder="description" className="input input-bordered" required />
+              <input type="text" name="food_description" placeholder="description" className="input input-bordered" required />
               </div>
          <div className="form-control w-full">
               <label className="label">
                 <span className="label-text">Previous Price</span>
               </label>
-              <input type="number" name="previousPrice" placeholder="previous price" className="input input-bordered" required />
+              <input type="number" name="previous_cost" placeholder="previous price" className="input input-bordered" required />
             </div>
          <div className="form-control w-full">
               <label className="label">
                 <span className="label-text">Delivery Cost</span>
               </label>
-              <input type="text" name="deliveryCost" placeholder="delivery cost" className="input input-bordered" required />
+              <input type="text" name="delivery_cost" placeholder="delivery cost" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
@@ -93,25 +93,25 @@ const AddProduct = () => {
               <label className="label">
                 <span className="label-text">Cuisine type</span>
               </label>
-              <input type="text" name="category" placeholder="cuisine type+" className="input input-bordered" required />
+              <input type="text" name="cuisine_type" placeholder="cuisine type+" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Image</span>
               </label>
-              <input type="file" name="img" placeholder="image URL" className="input input-bordered" required />
+              <input type="file" name="image" placeholder="image URL" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Present Price</span>
               </label>
-              <input type="number" name="presentPrice" placeholder="present price" className="input input-bordered" required />
+              <input type="number" name="previous_price" placeholder="present price" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Delivery Time</span>
               </label>
-              <input type="text" name="deliveryTime" placeholder="delivery time" className="input input-bordered" required />
+              <input type="text" name="delivery_time" placeholder="delivery time" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
