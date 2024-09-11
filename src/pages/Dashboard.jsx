@@ -1,8 +1,12 @@
 import burger from "../assets/images/burgerWithoutBG1.png"
 import FavouriteCuisines from "../components/dashboard/FavouriteCuisines";
 import SearchInput from "../components/dashboard/SearchInput";
+import Restaurants from "../components/dashboard/Restaurants";
+import { useLoaderData } from "react-router-dom";
 
 const Dashboard = () => {
+  const data = useLoaderData();
+  console.log(data)
     return (
         <div className="pl-2 pt-4  bg-[#c0c7ee]">
           <SearchInput/>
@@ -19,6 +23,7 @@ const Dashboard = () => {
         </div>
       </div>
       <FavouriteCuisines/>
+      <Restaurants data= {data}/>
         </div>
     );
 };

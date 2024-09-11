@@ -21,12 +21,6 @@ export const router = createBrowserRouter(
                 {
                     path: "/",
                     element: <Home/>,
-                    loader:()=> fetch("http://localhost:5000/food"),
-                 },
-                 {
-                    path: "/food/:id",
-                    element: <FoodDetail/>,
-                    loader:({params})=>fetch(`http://localhost:5000/food${params.id}`),
                  },
             ]
         },
@@ -53,7 +47,12 @@ export const router = createBrowserRouter(
                 {
                     path: "/dashboard",
                     element: <Dashboard/>,
-                
+                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                 },
+                 {
+                    path: "/dashboard/food/:id",
+                    element: <FoodDetail/>,
+                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food${params.id}`),
                  },
                  {
                     path: "/dashboard/add-product",

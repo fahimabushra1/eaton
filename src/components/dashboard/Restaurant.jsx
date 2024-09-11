@@ -24,7 +24,7 @@ const Restaurant = ({food}) => {
         <small>< FaWalking className="inline-flex mr-2"/>{distance}</small>
     </div>
     <div className="card-actions justify-end">
-      <Link to ={`/food/${_id}`} className="btn">Detail</Link>
+      <Link to ={`/dashboard/food/${_id}`} className="btn">Detail</Link>
     </div>
   </div>
 </div>
