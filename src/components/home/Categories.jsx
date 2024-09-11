@@ -6,7 +6,7 @@ import pickingFrenchFry from "../../assets/images/picking-frenchFry2.png"
 
 const Categories = () => {
     return (
-        <div className="my-24">
+        <div className="my-12">
            <div className='flex justify-around gap-24'>
                  <div className="text-4xl font-bold capitalize">
                     <h2>our <span className="text-orange-500">best delivered</span><br /> categories</h2>

@@ -9,6 +9,7 @@ import AddProduct from "../pages/AddProduct";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
+import FoodDetail from "../pages/FoodDetail";
 
 export const router = createBrowserRouter(
     [
@@ -20,12 +21,13 @@ export const router = createBrowserRouter(
                 {
                     path: "/",
                     element: <Home/>,
+                    loader:()=> fetch("http://localhost:5000/food"),
                  },
-                //  {
-                //     path: "/products/:id",
-                //     element: <ProductDetails/>,
-                //     loader:({params})=>fetch(`http://localhost:5173/coffees/${params.id}`),
-                //  },
+                 {
+                    path: "/food/:id",
+                    element: <FoodDetail/>,
+                    loader:({params})=>fetch(`http://localhost:5000/food${params.id}`),
+                 },
             ]
         },
         {
@@ -49,16 +51,17 @@ export const router = createBrowserRouter(
             errorElement: <ErrorPage/>,
             children:[
                 {
-                    path: "dashboard",
+                    path: "/dashboard",
                     element: <Dashboard/>,
+                
                  },
                  {
-                    path: "dashboard/add-product",
+                    path: "/dashboard/add-product",
                     element:<AddProduct/>,
                     // loader:()=> fetch("http://localhost:5000/coffees"),
                   },
                 //   {
-                //     path: "dashboard/edit-product/:id",
+                //     path: "/dashboard/edit-product/:id",
                 //     element:<EditProduct/>,
                 //     loader:({params})=>fetch(`http://localhost:5000/coffees/${params.id}`),
                 //   },

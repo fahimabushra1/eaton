@@ -1,6 +1,5 @@
 import burger from "../assets/images/burgerWithoutBG1.png"
 import FavouriteCuisines from "../components/dashboard/FavouriteCuisines";
-import HomeChefs from "../components/dashboard/HomeChefs";
 import SearchInput from "../components/dashboard/SearchInput";
 
 const Dashboard = () => {
@@ -19,8 +18,7 @@ const Dashboard = () => {
       <p className="float-right pr-8 pb-2 font-semibold">Learn more</p>
         </div>
       </div>
-     <FavouriteCuisines/>
-     <HomeChefs/>
+      <FavouriteCuisines/>
         </div>
     );
 };

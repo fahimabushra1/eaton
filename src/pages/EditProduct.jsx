@@ -144,4 +144,4 @@ const EditProduct = () => {
     </div>
     )
 };
-export default EditProduct;`
+export default EditProduct;
