@@ -10,6 +10,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
 import FoodDetail from "../pages/FoodDetail";
+import ManageProduct from "../pages/ManageProduct";
 
 export const router = createBrowserRouter(
     [
@@ -52,17 +53,22 @@ export const router = createBrowserRouter(
                  {
                     path: "/dashboard/food/:id",
                     element: <FoodDetail/>,
-                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food${params.id}`),
+                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
                  },
                  {
                     path: "/dashboard/add-product",
                     element:<AddProduct/>,
-                    // loader:()=> fetch("http://localhost:5000/coffees"),
+                    // loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                  },
+                 {
+                    path: "/dashboard/manage-product",
+                    element:<ManageProduct/>,
+                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                 //   {
-                //     path: "/dashboard/edit-product/:id",
+                //     path: "dashboard/edit-product/:id",
                 //     element:<EditProduct/>,
-                //     loader:({params})=>fetch(`http://localhost:5000/coffees/${params.id}`),
+                //     loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
                 //   },
             ]
         }

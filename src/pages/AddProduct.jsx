@@ -1,4 +1,4 @@
-
+import toast from "react-hot-toast";
 
 const AddProduct = () => {
     // const token = localStorage.getItem('token')
@@ -31,7 +31,7 @@ const AddProduct = () => {
           body: JSON.stringify(data),})
           .then((res) =>res.json())
           .then((data) =>{
-            // toast.success('data added successfully');
+            toast.success('data added successfully');
             console.log(data)
             form.reset()})
           .catch((err) => {
