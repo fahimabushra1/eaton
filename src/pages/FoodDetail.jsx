@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import pizzaHut from "../assets/images/Pizza-hut.png"
 import { LuDot } from 'react-icons/lu';
+import Rating from '../components/dashboard/Rating';
 
 const FoodDetail = () => {
   const food = useLoaderData();
@@ -18,7 +19,7 @@ const FoodDetail = () => {
    <div className='ml-4'>
    <h2 className="card-title text-3xl">{restaurant_name}</h2>
     <p>{cuisine_type}</p>
-   <p className='mb-4'>rating</p>
+    <Rating popularity={popularity}/>
     <div className='grid grid-cols-3 gap-2'>
      <div className='flex'>
      <p>{address}</p>
