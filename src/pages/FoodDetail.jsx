@@ -23,10 +23,10 @@ const FoodDetail = () => {
     <div className='grid grid-cols-3 gap-2'>
      <div className='flex'>
      <p>{address}</p>
-     <span><LuDot className='text-xs mt-2' /></span>
+     <span><LuDot className='text-sm mt-2'/></span>
      </div>
       <p>{distance} away</p>
-      <Link>open in map</Link>
+      <Link className='underline text-orange-700' to={"/dashboard/google-map"}>open in map</Link>
     </div>
    </div>
   </div>

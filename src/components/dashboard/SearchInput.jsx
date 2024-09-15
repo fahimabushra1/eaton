@@ -1,10 +1,10 @@
 
-
-const SearchInput = () => {
+const SearchInput = ({handleSearch}) => {
+ 
     return (
         <div className='w-1/2 mt-2'>
       <label className="input input-bordered flex items-center gap-2">
-  <input type="text" className="grow" placeholder="Search for restaurants, cuisines and dishes" />
+  <input type="text" className="grow" onChange={handleSearch} placeholder="Search for food name" />
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"

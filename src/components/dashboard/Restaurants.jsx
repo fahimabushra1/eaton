@@ -1,6 +1,6 @@
 import Restaurant from "./Restaurant";
 
-const Restaurants = ({data}) => {
+const Restaurants = ({data, search}) => {
     console.log(data)
     return (
         <div className="p-4">
@@ -9,7 +9,12 @@ const Restaurants = ({data}) => {
         <div className="grid grid-cols-3 gap-4">
          {
            // eslint-disable-next-line react/prop-types
-           data?.map((food)=>
+           data?.filter((food)=>{
+            return search?.toLowerCase()===''
+            ? food
+            : food.food_name?.toLowerCase().includes(search);
+          })
+           ?.map((food)=>
              <Restaurant key={food._id} food={food} />)
          }
         </div>

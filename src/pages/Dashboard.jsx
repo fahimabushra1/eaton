@@ -3,13 +3,18 @@ import FavouriteCuisines from "../components/dashboard/FavouriteCuisines";
 import SearchInput from "../components/dashboard/SearchInput";
 import Restaurants from "../components/dashboard/Restaurants";
 import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [search,setSearch] = useState();
   const data = useLoaderData();
   console.log(data)
+  const handleSearch = (e)=>{
+    setSearch(e.target.value)
+  }
     return (
         <div className="pl-2 pt-4  bg-[#c0c7ee]">
-          <SearchInput/>
+          <SearchInput data={data} handleSearch={handleSearch}/>
       <div className="bg-white overflow-hidden mt-4 rounded-3xl mr-4">
       <div className='flex justify-center items-center gap-2'>
         <div><img className="w-52" src={burger} alt="burger image" /></div>
@@ -23,7 +28,7 @@ const Dashboard = () => {
         </div>
       </div>
       <FavouriteCuisines/>
-      <Restaurants data= {data}/>
+      <Restaurants data= {data} search={search}/>
         </div>
     );
 };

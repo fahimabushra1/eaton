@@ -11,6 +11,7 @@ import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
 import FoodDetail from "../pages/FoodDetail";
 import ManageProduct from "../pages/ManageProduct";
+import GoogleMap from "../pages/GoogleMap";
 
 export const router = createBrowserRouter(
     [
@@ -58,6 +59,11 @@ export const router = createBrowserRouter(
                  {
                     path: "/dashboard/add-product",
                     element:<AddProduct/>,
+                    // loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                  },
+                 {
+                    path: "/dashboard/google-map",
+                    element:<GoogleMap/>,
                     // loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                  {
