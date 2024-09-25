@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import salad from "../assets/images/sALADwITHOUTImg.png"
 import burger from "../assets/images/burgerWithoutBG1.png"
 import pizza from "../assets/images/pizzaWithout bg.png"
-import veggies from "../assets/images/veggiesWithoutBG.png"
+// import veggies from "../assets/images/veggiesWithoutBG.png"
 import useAuth from "../hooks/useAuth";
 // import FbLogin from "../components/login-registration/FbLogin";
 import toast from "react-hot-toast";
@@ -93,7 +93,7 @@ useEffect(()=>{
   <div>Delivery in 30 minutes all over the country</div>
  </div>
 </div>
-<div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-16">
+<div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
  <form onSubmit={handleSubmit} className="card-body">
   <div className="form-control">
      <label className="label">
@@ -146,7 +146,7 @@ useEffect(()=>{
         <img className="w-72 absolute bottom-0 left-36 -z-10" src={salad} alt="salad" />
         <img className="w-80 absolute top-44 right-0 -z-10" src={pizza} alt="pizza" />
         <img className="w-40 absolute top-20 left-0" src={burger} alt="burger" />
-        <img className="w-40 absolute top-8 right-96 -z-10" src={veggies} alt="veggies" />
+        {/* <img className="w-40 absolute top-8 right-96 -z-10" src={veggies} alt="veggies" /> */}
       </div> 
    </>
     );

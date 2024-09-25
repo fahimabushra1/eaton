@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import salad from "../assets/images/sALADwITHOUTImg.png"
 import burger from "../assets/images/burgerWithoutBG1.png"
 import pizza from "../assets/images/pizzaWithout bg.png"
-import veggies from "../assets/images/veggiesWithoutBG.png"
 // import FbLogin from "../components/login-registration/FbLogin";
 
 
@@ -69,10 +68,9 @@ useEffect(()=>{
         </div>
       </div>
       <div>
-        <img className="w-60 absolute bottom-0 left-44 -z-10" src={salad} alt="salad" />
+        <img className="w-60 absolute bottom-24 left-52 -z-10" src={salad} alt="salad" />
         <img className="w-80 absolute top-10 right-0" src={pizza} alt="pizza" />
         <img className="w-40 absolute top-20 left-0" src={burger} alt="burger" />
-        <img className="w-40 absolute top-20 right-96 -z-10" src={veggies} alt="veggies" />
       </div>
       </>
     );

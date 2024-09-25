@@ -5,13 +5,13 @@ import Home from "../pages/Home";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Dashboard from "../pages/Dashboard";
 import AddProduct from "../pages/AddProduct";
-// import EditProduct from "../pages/EditProduct";
+import EditProduct from "../pages/EditProduct";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
 import FoodDetail from "../pages/FoodDetail";
-import ManageProduct from "../pages/ManageProduct";
 import GoogleMap from "../pages/GoogleMap";
+import ManageProducts from "../pages/ManageProducts";
 
 export const router = createBrowserRouter(
     [
@@ -59,7 +59,7 @@ export const router = createBrowserRouter(
                  {
                     path: "/dashboard/add-product",
                     element:<AddProduct/>,
-                    // loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                  {
                     path: "/dashboard/google-map",
@@ -67,15 +67,15 @@ export const router = createBrowserRouter(
                     // loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                  {
-                    path: "/dashboard/manage-product",
-                    element:<ManageProduct/>,
+                    path: "/dashboard/manage-products",
+                    element:<ManageProducts/>,
                     loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
-                //   {
-                //     path: "dashboard/edit-product/:id",
-                //     element:<EditProduct/>,
-                //     loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
-                //   },
+                  {
+                    path: "/dashboard/manage-products/:id",
+                    element:<EditProduct/>,
+                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
+                  },
             ]
         }
     ]
