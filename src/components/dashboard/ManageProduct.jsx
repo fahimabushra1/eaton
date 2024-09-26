@@ -32,9 +32,9 @@ const ManageProduct = ({food, onDelete}) => {
         }
     return (
         <div>
-            <div className="card bg-base-100 w-72 max-h-56 shadow-xl">
+            <div className="card bg-base-100 w-72 max-h-[350px] shadow-xl">
   <figure>
-    <img
+    <img className="max-h-32 rounded-3xl mt-6"
       src={image}
       alt="Shoes" />
   </figure>

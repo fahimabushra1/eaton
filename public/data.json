@@ -1,798 +1,1124 @@
 [
     {
-        "restaurant_name": "Burger Haven",
-        "food_name": "Classic Cheeseburger",
-        "cuisine_type": "American, fast food, burger",
-        "image": "https://example.com/images/burger_haven_cheeseburger.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "address": "123 Main St, Springfield",
-        "distance": "1.2 miles",
-        "food_description": "A juicy beef patty with melted cheddar cheese, lettuce, tomato, and pickles on a sesame seed bun.",
-        "popularity": 4.7,
-        "previous_price": 7.99,
-        "present_price": 8.49
-    },
-    {
-        "restaurant_name": "Pizza Palace",
-        "food_name": "Margherita Pizza",
-        "cuisine_type": "Italian, pizza, fast food",
-        "image": "https://example.com/images/pizza_palace_margherita.jpg",
+        "restaurant_name": "Driff Burgers",
+        "address": "108 Birch St, SpringHall",
+        "distance": "1 miles",
+        "popularity": 4,
+        "cuisine_type": ["American", "fast food"],
         "delivery_cost": "free",
         "delivery_time": "20 mins",
-        "address": "456 Elm St, Springfield",
-        "distance": "2.5 miles",
-        "food_description": "A classic pizza with fresh tomatoes, mozzarella cheese, and basil on a thin, crispy crust.",
-        "popularity": "popular",
-        "previous_price": 11.99,
-        "present_price": 12.49
-    },
-    {
-        "restaurant_name": "Sushi Express",
-        "food_name": "California Roll",
-        "cuisine_type": "Japanese, lunch, sushi",
-        "image": "https://example.com/images/sushi_express_california_roll.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "address": "789 Oak St, Springfield",
-        "distance": "1.0 miles",
-        "food_description": "A roll made with imitation crab, cucumber, and avocado, wrapped in seaweed and rice.",
-        "popularity": 4.6,
-        "previous_price": 9.99,
-        "present_price": 10.49
-    },
-    {
-        "restaurant_name": "Taco Town",
-        "food_name": "Beef Taco",
-        "cuisine_type": "Mexican, beef, fast food",
-        "image": "https://example.com/images/taco_town_beef_taco.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "address": "101 Maple St, Springfield",
-        "distance": "1.5 miles",
-        "food_description": "Soft taco filled with seasoned beef, lettuce, cheese, and salsa.",
-        "popularity": "popular",
-        "previous_price": 3.49,
-        "present_price": 3.99
-    },
-    {
-        "restaurant_name": "Sandwich Stop",
-        "food_name": "Turkey Club Sandwich",
-        "cuisine_type": "American, fast food, sandwich, snack",
-        "image": "https://example.com/images/sandwich_stop_turkey_club.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "address": "202 Birch St, Springfield",
-        "distance": "2.0 miles",
-        "food_description": "A triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayonnaise.",
-        "popularity": 4.4,
-        "previous_price": 8.49,
-        "present_price": 8.99
-    },
-    {
-        "restaurant_name": "Noodle Nirvana",
-        "food_name": "Chicken Teriyaki Noodles",
-        "cuisine_type": "Japanese,noodle, snack",
-        "image": "https://example.com/images/noodle_nirvana_chicken_teriyaki.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "address": "303 Pine St, Springfield",
-        "distance": "2.3 miles",
-        "food_description": "Stir-fried noodles with chicken, vegetables, and a savory teriyaki sauce.",
-        "popularity": "popular",
-        "previous_price": 10.99,
-        "present_price": 11.49
-    },
-    {
-        "restaurant_name": "Wrap World",
-        "food_name": "Chicken Caesar Wrap",
-        "cuisine_type": "American, chicken, snack, fast food",
-        "image": "https://example.com/images/wrap_world_chicken_caesar.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "address": "404 Cedar St, Springfield",
-        "distance": "1.8 miles",
-        "food_description": "A wrap filled with grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing.",
-        "popularity": "popular",
-        "previous_price": 7.99,
-        "present_price": 8.49
-    },
-    {
-        "restaurant_name": "Fried Favorites",
-        "food_name": "Buffalo Wings",
-        "cuisine_type": "American, beef, snack, fast food",
-        "image": "https://example.com/images/fried_favorites_buffalo_wings.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "address": "505 Spruce St, Springfield",
-        "distance": "1.7 miles",
-        "food_description": "Spicy buffalo wings served with celery and a side of blue cheese dressing.",
-        "popularity": 4.8,
-        "previous_price": 8.49,
-        "present_price": 8.99
-    },
-    {
-        "restaurant_name": "Donut Delight",
-        "food_name": "Glazed Donut",
-        "cuisine_type": "American, bakery, cake, donut",
-        "image": "https://example.com/images/donut_delight_glazed.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "15 mins",
-        "address": "606 Walnut St, Springfield",
-        "distance": "1.1 miles",
-        "food_description": "A classic donut with a sweet, glossy glaze.",
-        "popularity": 4.5,
-        "previous_price": 1.99,
-        "present_price": 2.49
-    },
-    {
-        "restaurant_name": "Mediterranean Munch",
-        "food_name": "Falafel Wrap",
-        "cuisine_type": "Mediterranean, salad",
-        "image": "https://example.com/images/mediterranean_munch_falafel.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "address": "707 Oak St, Springfield",
-        "distance": "2.2 miles",
-        "food_description": "A wrap filled with crispy falafel, lettuce, tomatoes, and tahini sauce.",
-        "popularity": 4.4,
-        "previous_price": 6.99,
-        "present_price": 7.49
-    },
-    {
-        "restaurant_name": "Smoothie Stop",
-        "food_name": "Berry Blast Smoothie",
-        "cuisine_type": "American, drinks",
-        "image": "https://example.com/images/smoothie_stop_berry_blast.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "address": "808 Birch St, Springfield",
-        "distance": "1.6 miles",
-        "food_description": "A refreshing smoothie made with a blend of berries, yogurt, and honey.",
-        "popularity": 4.6,
-        "previous_price": 5.49,
-        "present_price": 5.99
-    },
-    {
-        "restaurant_name": "Chicken Crave",
-        "food_name": "Fried Chicken Sandwich",
-        "cuisine_type": "American, chicken,sandwich, fast food",
-        "image": "https://example.com/images/chicken_crave_fried_chicken.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "address": "909 Maple St, Springfield",
-        "distance": "1.4 miles",
-        "food_description": "Crispy fried chicken fillet with pickles and mayo on a soft bun.",
-        "popularity": 4.7,
-        "previous_price": 6.99,
-        "present_price": 7.49
-    },
-    {
-        "restaurant_name": "Bistro Delight",
-        "food_name": "Grilled Chicken Salad",
-        "food_description": "A fresh salad with grilled chicken, mixed greens, cherry tomatoes, cucumbers, and a balsamic vinaigrette.",
-        "image": "https://example.com/images/bistro_delight_grilled_chicken_salad.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": 4.8,
-        "cuisine_type": "American, chicken, lunch, salad",
-        "address": "123 Elm St, Downtown",
-        "distance": "1.5 miles",
-        "previous_cost": 10.99,
-        "previous_price": 11.49
-    },
-    {
-        "restaurant_name": "Pasta Paradise",
-        "food_name": "Spaghetti Carbonara",
-        "food_description": "Classic Italian spaghetti with creamy carbonara sauce, pancetta, and Parmesan cheese.",
-        "image": "https://example.com/images/pasta_paradise_spaghetti_carbonara.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.7,
-        "cuisine_type": "Italian, noodles, pasta",
-        "address": "456 Oak St, Downtown",
-        "distance": "2.0 miles",
-        "previous_cost": 12.99,
-        "previous_price": 13.49
-    },
-    {
-        "restaurant_name": "Sushi House",
-        "food_name": "Rainbow Roll",
-        "food_description": "A colorful sushi roll with a variety of fresh fish, avocado, and cucumber, topped with spicy mayo.",
-        "image": "https://example.com/images/sushi_house_rainbow_roll.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "Japanese, lunch, sushi",
-        "address": "789 Maple Ave, Downtown",
-        "distance": "1.2 miles",
-        "previous_cost": 14.99,
-        "previous_price": 15.49
-    },
-    {
-        "restaurant_name": "Taco Fiesta",
-        "food_name": "Chicken Tacos",
-        "food_description": "Soft tacos filled with seasoned chicken, lettuce, cheese, and salsa.",
-        "image": "https://example.com/images/taco_fiesta_chicken_tacos.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": 4.5,
-        "cuisine_type": "Mexican, chicken, fast food, snack",
-        "address": "321 Pine St, Downtown",
-        "distance": "1.8 miles",
-        "previous_cost": 8.49,
-        "previous_price": 8.99
-    },
-    {
-        "restaurant_name": "Wrap & Roll",
-        "food_name": "Veggie Wrap",
-        "food_description": "A wrap filled with grilled vegetables, hummus, and fresh greens, all wrapped in a whole wheat tortilla.",
-        "image": "https://example.com/images/wrap_roll_veggie_wrap.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": 4.4,
-        "cuisine_type": "American, fast food, sandwich, snack",
-        "address": "654 Cedar St, Downtown",
-        "distance": "1.6 miles",
-        "previous_cost": 7.99,
-        "previous_price": 8.49
-    },
-    {
-        "restaurant_name": "Indian Spice",
-        "food_name": "Chicken suslik",
-        "food_description": "Tender chicken chunks simmered in a rich and creamy tomato-based curry sauce, served with basmati rice.",
-        "image": "https://example.com/images/indian_spice_chicken_tikka_masala.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "35 mins",
-        "popularity": 4.7,
-        "cuisine_type": "Indian, lunch, chicken",
-        "address": "987 Birch St, Downtown",
-        "distance": "2.2 miles",
-        "previous_cost": 13.49,
-        "previous_price": 13.99
-    },
-    {
-        "restaurant_name": "Mediterranean Grill",
-        "food_name": "Falafel Plate",
-        "food_description": "A platter of crispy falafel balls served with hummus, tabbouleh, and pita bread.",
-        "image": "https://example.com/images/mediterranean_grill_falafel_plate.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.6,
-        "cuisine_type": "Mediterranean, breakfast",
-        "address": "123 Willow St, Downtown",
-        "distance": "1.9 miles",
-        "previous_cost": 9.99,
-        "previous_price": 10.49
-    },
-    {
-        "restaurant_name": "BBQ Bliss",
-        "food_name": "Pulled chicken Sandwich",
-        "food_description": "Slow-cooked pulled chicken with barbecue sauce, served on a bun with coleslaw.",
-        "image": "https://example.com/images/bbq_bliss_pulled_pork.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": 4.8,
-        "cuisine_type": "American, fast food, sandwich, snack",
-        "address": "456 Oak Ave, Downtown",
-        "distance": "2.1 miles",
-        "previous_cost": 11.49,
-        "previous_price": 11.99
-    },
-    {
-        "restaurant_name": "Noodle Nirvana",
-        "food_name": "Pad Thai",
-        "food_description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
-        "image": "https://example.com/images/noodle_nirvana_pad_thai.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.5,
-        "cuisine_type": "Thai, noodle, snack, fast food",
-        "address": "789 Spruce St, Downtown",
-        "distance": "1.7 miles",
-        "previous_cost": 12.49,
-        "previous_price": 12.99
+        "image": "https://mir-s3-cdn-cf.behance.net/projects/404/cfaa9d174980195.Y3JvcCwxOTk5LDE1NjQsMCwyMTc.jpg",
+        "offers":
+        [
+             {
+                "offer": "10% off",
+                "description": "Minimum order TK 199 and special savings for eaton members"
+            },
+             {
+                "offer": "25% off (YAMEATON)",
+                "description": "Minimum order TK 199 and valid for all items. Use in cart."
+            },
+             {
+                "offer": "25% off (CRAZY)",
+                "description": "Minimum order TK 199 and valid for all items. Use in cart."
+            },
+             {
+                "offer": "20% off (EatonDeal)",
+                "description": "Minimum order TK 399 and valid for all items. Use in cart."
+            }
+        ],  
+        "food":
+        [
+            {
+                "food_name": "Classic Cheeseburger",
+                "food_description": "A juicy beef patty with melted cheddar cheese, lettuce, tomato, and pickles on a sesame seed bun.",
+                "category": ["fastfood", "burger"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular":"popular",
+                "image": "https://png.pngtree.com/png-clipart/20231020/original/pngtree-3d-illustration-cheese-burger-png-image_13381662.png"
+            },   
+            {
+                "food_name": "BBQ beef burger",
+                "food_description": "A juicy beef patty with melted cheddar cheese, lettuce, tomato, and pickles on a sesame seed bun.",
+                "category": ["fastfood", "burger"],
+                "previous_price": 300,
+                "present_price": 280,
+                "isPopular":"popular",
+                "image": "https://www.wholesomeyum.com/wp-content/uploads/2023/06/wholesomeyum-Best-Burger-Recipe-12.jpg"
+            },   
+            {
+                "food_name": "Vaggies Pizza",
+                "food_description": "A juicy beef patty with melted cheddar cheese, lettuce, tomato, and pickles on a sesame seed bun.",
+                "category": ["fastfood", "pizza"],
+                "previous_price": 300,
+                "present_price": 290,
+                "image": "https://png.pngtree.com/png-vector/20230321/ourmid/pngtree-modern-kitchen-food-box-italian-pizza-png-image_6651521.png"
+            },   
+            {
+                "food_name": "Veggie Burger",
+                "food_description": "A hearty veggie patty with lettuce, tomato, and avocado on a whole wheat bun.",
+                "category": ["fastfood", "burger"],
+                "previous_price": 150,
+                "present_price": 160,
+                "isPopular":"popular",
+                "image": "https://t4.ftcdn.net/jpg/05/61/82/83/360_F_561828375_KCtTuNdpQTjHrMqDrcoCpoLaYhLrZQdI.jpg"
+            },   
+            {
+                "food_name": "Fried Chicken Sandwich",
+                "food_description": "Crispy fried chicken fillet with pickles and mayo on a soft bun.",
+                "category": ["fastfood", "sandwich"],
+                "present_price": 80,
+                "isPopular":"popular",
+                "image": "https://pngimg.com/uploads/sandwich/sandwich_PNG47.png"
+            },   
+            {
+                "food_name": "Falafel Wrap",
+                "food_description": "A wrap filled with crispy falafel, lettuce, tomatoes, and tahini sauce.",
+                "category": ["fastfood", "wrap"],
+                "present_price": 160,
+                "isPopular":"popular",
+                "image": "https://static.vecteezy.com/system/resources/thumbnails/032/325/315/small_2x/shawarma-isolated-on-transparent-background-file-cut-out-ai-generated-png.png"
+            },   
+            {
+                "food_name": "Chicken Caesar Wrap",
+                "food_description": "A wrap filled with grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing.",
+                "category": ["fastfood", "wrap"],
+                "previous_price": 230,
+                "present_price": 160,
+                "image": "https://static.vecteezy.com/system/resources/previews/039/113/033/non_2x/ai-generated-color-full-veggie-wrap-isolated-on-background-free-png.png"
+            },   
+            {
+                "food_name": "Chicken Teriyaki Noodles",
+                "food_description": "Stir-fried noodles with chicken, vegetables, and a savory teriyaki sauce.",
+                "category": ["fastfood", "noodles"],
+                "previous_price": 100,
+                "present_price": 110,
+                "isPopular":"popular",
+                "image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yNl9waG90b19vZl9hX2Jvd2xfb2ZfaW5zdGFudF9ub29kbGVzX3dpdGhfcGVhc18wM2I4NTE1YS0zMzFlLTQ5MDQtOTM1My02OTE0YTU0ZGExYzZfMS5qcGc.jpg"
+            },   
+            {
+                "food_name": "Turkey Club Sandwich",
+                "food_description": "A triple-decker sandwich with turkey, bacon, lettuce, tomato, and mayonnaise.",
+                "category": ["fastfood", "sandwich"],
+                "previous_price": 80,
+                "present_price": 60,
+                "image": "https://static.vecteezy.com/system/resources/previews/025/066/777/non_2x/sandwich-with-ai-generated-free-png.png"
+            },   
+            {
+                "food_name": "Margherita Pizza",
+                "food_description": "A classic pizza with fresh tomatoes, mozzarella cheese, and basil on a thin, crispy crust.",
+                "category": ["fastfood", "pizza"],
+                "previous_price": 300,
+                "present_price": 240,
+                "isPopular":"popular",
+                "image": "https://pngimg.com/uploads/pizza/pizza_PNG7102.png"
+            }
+        ]  
     },
     {
         "restaurant_name": "Burger Bliss",
-        "food_name": "Veggie Burger",
-        "food_description": "A hearty veggie patty with lettuce, tomato, and avocado on a whole wheat bun.",
-        "image": "https://example.com/images/burger_bliss_veggie_burger.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, fast food, burger",
-        "address": "654 Elm Ave, Downtown",
-        "distance": "1.3 miles",
-        "previous_cost": 9.49,
-        "previous_price": 9.99
-    },
-    {
-        "restaurant_name": "Fusion Bistro",
-        "food_name": "Korean BBQ Beef Bowl",
-        "food_description": "Tender beef slices marinated in Korean barbecue sauce, served with rice and steamed vegetables.",
-        "image": "https://example.com/images/fusion_bistro_korean_bbq.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.7,
-        "cuisine_type": "Korean, lunch, beef",
-        "address": "321 Maple St, Downtown",
-        "distance": "2.0 miles"
-    },
-    {
-        "restaurant_name": "Bistro Boss",
-        "food_name": "Grilled Chicken Salad",
-        "food_description": "A fresh salad with grilled chicken, mixed greens, cherry tomatoes, cucumbers, and a balsamic vinaigrette.",
-        "image": "https://example.com/images/bistro_delight_grilled_chicken_salad.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, chicken, lunch, salad",
-        "address": "123 Elm St, Downtown",
-        "distance": "1.5 miles",
-        "previous_cost": 10.99,
-        "previous_price": 11.49
-    },
-    {
-        "restaurant_name": "Pasta Paradise",
-        "food_name": "Spaghetti Carbonara",
-        "food_description": "Classic Italian spaghetti with creamy carbonara sauce, pancetta, and Parmesan cheese.",
-        "image": "https://example.com/images/pasta_paradise_spaghetti_carbonara.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.7,
-        "cuisine_type": "Italian, lunch",
-        "address": "456 Oak St, Downtown",
-        "distance": "2.0 miles",
-        "previous_cost": 12.99,
-        "previous_price": 13.49
-    },
-    {
-        "restaurant_name": "Sushi House",
-        "food_name": "Rainbow Roll",
-        "food_description": "A colorful sushi roll with a variety of fresh fish, avocado, and cucumber, topped with spicy mayo.",
-        "image": "https://example.com/images/sushi_house_rainbow_roll.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": 4.6,
-        "cuisine_type": "Japanese, lunch, sushi",
-        "address": "789 Maple Ave, Downtown",
-        "distance": "1.2 miles",
-        "previous_cost": 14.99,
-        "previous_price": 15.49
-    },
-    {
-        "restaurant_name": "Taco Fiesta",
-        "food_name": "Chicken Tacos",
-        "food_description": "Soft tacos filled with seasoned chicken, lettuce, cheese, and salsa.",
-        "image": "https://example.com/images/taco_fiesta_chicken_tacos.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "Mexican, chicken, fast food, snack",
-        "address": "321 Pine St, Downtown",
-        "distance": "1.8 miles",
-        "previous_cost": 8.49,
-        "previous_price": 8.99
-    },
-    {
-        "restaurant_name": "Wrap & Roll",
-        "food_name": "Veggie Wrap",
-        "food_description": "A wrap filled with grilled vegetables, hummus, and fresh greens, all wrapped in a whole wheat tortilla.",
-        "image": "https://example.com/images/wrap_roll_veggie_wrap.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, breakfast, snack",
-        "address": "654 Cedar St, Downtown",
-        "distance": "1.6 miles",
-        "previous_cost": 7.99,
-        "previous_price": 8.49
-    },
-    {
-        "restaurant_name": "Indian Spice",
-        "food_name": "Chicken Tikka Masala",
-        "food_description": "Tender chicken chunks simmered in a rich and creamy tomato-based curry sauce, served with basmati rice.",
-        "image": "https://example.com/images/indian_spice_chicken_tikka_masala.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "35 mins",
-        "popularity": "popular",
-        "cuisine_type": "Indian, lunch, chicken",
-        "address": "987 Birch St, Downtown",
-        "distance": "2.2 miles",
-        "previous_cost": 13.49,
-        "previous_price": 13.99
-    },
-    {
-        "restaurant_name": "Mediterranean Grill",
-        "food_name": "turkey Plate",
-        "food_description": "A platter of crispy falafel balls served with hummus, tabbouleh, and pita bread.",
-        "image": "https://example.com/images/mediterranean_grill_falafel_plate.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": 4.6,
-        "cuisine_type": "Mediterranean, breakfast",
-        "address": "123 Willow St, Downtown",
-        "distance": "1.9 miles",
-        "previous_cost": 9.99,
-        "previous_price": 10.49
-    },
-    {
-        "restaurant_name": "BBQ Bliss",
-        "food_name": "Pulled Beef Sandwich",
-        "food_description": "Slow-cooked pulled beef with barbecue sauce, served on a bun with coleslaw.",
-        "image": "https://example.com/images/bbq_bliss_pulled_pork.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, lunch, beef",
-        "address": "456 Oak Ave, Downtown",
-        "distance": "2.1 miles",
-        "previous_cost": 11.49,
-        "previous_price": 11.99
-    },
-    {
-        "restaurant_name": "Noodle Nirvana",
-        "food_name": "Pad Thai",
-        "food_description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
-        "image": "https://example.com/images/noodle_nirvana_pad_thai.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Thai, noodle, snack, fast food",
-        "address": "789 Spruce St, Downtown",
-        "distance": "1.7 miles",
-        "previous_cost": 12.49,
-        "previous_price": 12.99
-    },
-    {
-        "restaurant_name": "Burger Bliss",
-        "food_name": "Veggie Burger",
-        "food_description": "A hearty veggie patty with lettuce, tomato, and avocado on a whole wheat bun.",
-        "image": "https://example.com/images/burger_bliss_veggie_burger.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": 4.6,
-        "cuisine_type": "American, fast food, burger",
-        "address": "654 Elm Ave, Downtown",
-        "distance": "1.3 miles",
-        "previous_cost": 9.49,
-        "previous_price": 9.99
-    },
-    {
-        "restaurant_name": "Fusion Bistro",
-        "food_name": "Korean BBQ Beef Bowl",
-        "food_description": "Tender beef slices marinated in Korean barbecue sauce, served with rice and steamed vegetables.",
-        "image": "https://example.com/images/fusion_bistro_korean_bbq.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "35 mins",
-        "popularity": 4.7,
-        "cuisine_type": "Korean, lunch, beef",
-        "address": "321 Maple St, Downtown",
-        "distance": "2.0 miles",
-        "previous_cost": 14.99,
-        "previous_price": 15.49
-    },
-    {
-        "restaurant_name": "Seafood Shack",
-        "food_name": "Fish Tacos",
-        "food_description": "Grilled fish tacos with cabbage slaw, avocado, and a tangy lime crema.",
-        "image": "https://example.com/images/seafood_shack_fish_tacos.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": 4.5,
-        "cuisine_type": "Mexican, lunch, seafood, fish",
-        "address": "123 Pine Ave, Downtown",
-        "distance": "1.4 miles",
-        "previous_cost": 9.49,
-        "previous_price": 9.99
-    },
-    {
-        "restaurant_name": "Sweet Treats Bakery",
-        "food_name": "Chocolate Croissant",
-        "food_description": "A flaky, buttery croissant filled with rich chocolate and topped with a light dusting of powdered sugar.",
-        "image": "https://example.com/images/sweet_treats_chocolate_croissant.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
+        "address": "45 Park Ave, New York",
+        "distance": "0.8 miles",
         "popularity": 4.8,
-        "cuisine_type": "French, cake, bakery",
-        "address": "101 Baker St, Downtown",
-        "distance": "1.3 miles",
-        "previous_cost": 4.49,
-        "previous_price": 4.99
-    },
-    {
-        "restaurant_name": "Pastry Perfection",
-        "food_name": "Lemon Drizzle Cake",
-        "food_description": "A moist and zesty lemon cake with a tangy lemon glaze and a sprinkle of lemon zest.",
-        "image": "https://example.com/images/pastry_perfection_lemon_drizzle_cake.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "British, cake, bakery",
-        "address": "202 Sugar Ave, Downtown",
-        "distance": "1.5 miles",
-        "previous_cost": 5.99,
-        "previous_price": 6.49
-    },
-    {
-        "restaurant_name": "Cake Corner",
-        "food_name": "Red Velvet Cupcake",
-        "food_description": "A rich and moist red velvet cupcake topped with a swirl of cream cheese frosting and a hint of cocoa.",
-        "image": "https://example.com/images/cake_corner_red_velvet_cupcake.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "British, cake, bakery",
-        "address": "303 Flour St, Downtown",
-        "distance": "1.2 miles",
-        "previous_cost": 3.99,
-        "previous_price": 4.49
-    },
-    {
-        "restaurant_name": "Bakery Bliss",
-        "food_name": "Cinnamon Roll",
-        "food_description": "A soft and gooey cinnamon roll topped with a cream cheese icing and a sprinkle of cinnamon sugar.",
-        "image": "https://example.com/images/bakery_bliss_cinnamon_roll.jpg",
+        "cuisine_type": ["American", "Burgers"],
         "delivery_cost": "free",
         "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, cake, bakery",
-        "address": "404 Pastry St, Downtown",
-        "distance": "1.6 miles",
-        "previous_cost": 4.49,
-        "previous_price": 4.99
+        "image": "https://www.shutterstock.com/image-vector/home-kitchen-logo-pot-full-260nw-2180373453.jpg",
+        "offers": [
+            {
+                "offer": "15% off",
+                "description": "Minimum order TK 199 for all items"
+            },
+            {
+                "offer": "Buy 1 Get 1 Free",
+                "description": "Applies to burgers only, valid every Wednesday."
+            }
+        ],
+        "food": [
+            {
+                "food_name": "Double Cheeseburger",
+                "food_description": "A classic burger with two beef patties, cheddar, lettuce, tomato, and onion.",
+                "category": ["fastfood", "burger"],
+                "previous_price": 180,
+                "present_price": 160,
+                "isPopular": "popular",
+                "image": "https://png.pngtree.com/png-clipart/20231020/original/pngtree-3d-illustration-cheese-burger-png-image_13381662.png"
+            },
+            {
+                "food_name": "Fries",
+                "food_description": "Crispy seasoned fries.",
+                "category": ["fastfood", "sides"],
+                "previous_price": 60,
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://pngimg.com/d/fries_PNG73.png"
+            },
+            {
+                "food_name": "Chicken Tacos",
+                "food_description": "Soft tacos filled with grilled chicken, lettuce, tomato, and cheese.",
+                "category": ["fastfood", "taco"],
+                "previous_price": 120,
+                "present_price": 100,
+                "image": "https://static.vecteezy.com/system/resources/thumbnails/032/424/350/small/fresh-pair-of-meat-and-vegetable-tacos-ai-generative-free-png.png"
+            },
+            {
+                "food_name": "Beef Tacos",
+                "food_description": "Soft tacos filled with grilled beef, lettuce, tomato, and cheese.",
+                "category": ["fastfood", "taco"],
+                "previous_price": 220,
+                "present_price": 150,
+                "image": "https://img.freepik.com/free-photo/delicious-tacos-studio_23-2150799513.jpg"
+            },
+            {
+                "food_name": "Vaggies Tacos",
+                "food_description": "Soft tacos filled with grilled chicken, lettuce, tomato, and cheese.",
+                "category": ["fastfood", "taco"],
+                "previous_price": 120,
+                "present_price": 100,
+                "image": "https://static.vecteezy.com/system/resources/previews/025/067/655/non_2x/tacos-with-ai-generated-free-png.png"
+            },
+            {
+                "food_name": "Beef Quesadilla",
+                "food_description": "Grilled flour tortilla filled with seasoned beef and melted cheese.",
+                "category": ["fastfood", "quesadilla", "taco"],
+                "previous_price": 150,
+                "present_price": 130,
+                "isPopular": "popular",
+                "image": "https://www.pngarts.com/files/9/Cheese-Quesadilla-PNG-Image-Background.png"
+            },
+            {
+                "food_name": "Pepperoni Pizza",
+                "food_description": "A large pizza with pepperoni and mozzarella cheese.",
+                "category": ["fastfood", "pizza"],
+                "previous_price": 300,
+                "present_price": 250,
+                "isPopular": "popular",
+                "image": "https://w7.pngwing.com/pngs/280/611/png-transparent-pizza-hamburger-submarine-sandwich-restaurant-oven-pizza-food-cheese-recipe.png"
+            },
+            {
+                "food_name": "Cheese Pizza",
+                "food_description": "A large pizza with pepperoni and mozzarella cheese.",
+                "category": ["fastfood", "pizza"],
+                "previous_price": 300,
+                "present_price": 250,
+                "isPopular": "popular",
+                "image": "https://w7.pngwing.com/pngs/280/611/png-transparent-pizza-hamburger-submarine-sandwich-restaurant-oven-pizza-food-cheese-recipe.png"
+            },
+            {
+                "food_name": "Turkey and Cheese Sub",
+                "food_description": "Turkey, cheddar cheese, lettuce, and tomato on a sub roll.",
+                "category": ["fastfood", "sandwich"],
+                "previous_price": 140,
+                "present_price": 120,
+                "image": "https://static.vecteezy.com/system/resources/previews/025/066/777/non_2x/sandwich-with-ai-generated-free-png.png"
+            },
+            {
+                "food_name": "BLT Sub",
+                "food_description": "Bacon, lettuce, and tomato with mayo on a toasted sub roll.",
+                "category": ["fastfood", "sandwich"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://png.pngtree.com/png-vector/20240728/ourmid/pngtree-d-sweet-bread-sandwitch-is-on-the-wooden-board-with-grenn-png-image_13248233.png"
+            },
+            {
+                "food_name": "Falafel Wrap",
+                "food_description": "Crispy falafel, hummus, lettuce, and tomatoes in a wrap.",
+                "category": ["fastfood", "wrap"],
+                "previous_price": 120,
+                "present_price": 110,
+                "isPopular": "popular",
+                "image": "https://img.freepik.com/free-photo/tortilla_144627-20838.jpg"
+            },
+            {
+                "food_name": "Chicken Shawarma",
+                "food_description": "Marinated chicken, lettuce, tomatoes, and tahini sauce in pita bread.",
+                "category": ["fastfood", "shawarma"],
+                "previous_price": 150,
+                "present_price": 140,
+                "image": "https://e7.pngegg.com/pngimages/925/64/png-clipart-korean-taco-hamburger-whopper-burrito-shawarma-barbecue-barbecue-food.png"
+            }
+        ]
     },
     {
-        "restaurant_name": "Gourmet Goodies",
-        "food_name": "Almond Biscotti",
-        "food_description": "Crunchy almond biscotti perfect for dipping in coffee or tea, made with whole almonds and a touch of vanilla.",
-        "image": "https://example.com/images/gourmet_goodies_almond_biscotti.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "Italian, cake, bakery",
-        "address": "505 Cookie Ln, Downtown",
-        "distance": "1.8 miles",
-        "previous_cost": 3.99,
-        "previous_price": 4.49
+      "restaurant_name": "Dragon Express",
+      "address": "456 Jade St, Chinatown",
+      "distance": "2.5 miles",
+      "popularity": 4.9,
+      "cuisine_type": ["Chinese", "Asian"],
+      "delivery_cost": "free",
+      "delivery_time": "30 mins",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/000/639/561/small/Cartoon_smiling_asian_chef_character.jpg",
+      "offers": [
+        {
+          "offer": "15% off",
+          "description": "Minimum order $20, valid for all items."
+        },
+        {
+          "offer": "Free Spring Roll",
+          "description": "Get a free spring roll with orders over TK25."
+        },
+        {
+          "offer": "10% off (DRAGON10)",
+          "description": "Use code DRAGON10 for 10% off your entire order."
+        }
+      ],
+      "food":
+      [
+          {
+            "food_name": "Kung Pao Chicken",
+            "food_description": "Spicy stir-fried chicken with peanuts, vegetables, and chili peppers.",
+            "category": ["Chinese", "chicken"],
+            "previous_price": 150,
+            "present_price": 140,
+            "isPopular": "popular",
+            "image": "https://img.freepik.com/premium-photo/chilli-chicken-is-sweet-spicy-crispy-appetizer-most-popular-indo-chinese-cuisine-served-plate_466689-1456.jpg"
+          },
+          {
+            "food_name": "Sweet and Sour beef",
+            "food_description": "Crispy pork pieces in a tangy sweet and sour sauce.",
+            "category": ["Chinese", "beef"],
+            "previous_price": 180,
+            "present_price": 170,
+            "image": "https://png.pngtree.com/png-vector/20240314/ourlarge/pngtree-beef-and-vegetables-stir-fry-in-black-plate-png-image_11964629.png"
+          },
+          {
+            "food_name": "Vegetable Fried Rice",
+            "food_description": "Stir-fried rice with mixed vegetables and soy sauce.",
+            "category": ["Chinese", "rice"],
+            "previous_price": 120,
+            "present_price": 110,
+            "isPopular": "popular",
+            "image": "https://static.vecteezy.com/system/resources/previews/025/269/710/original/fried-rice-with-ai-generated-free-png.png"
+          },
+          {
+            "food_name": "Dim Sum Platter",
+            "food_description": "A variety of steamed dumplings and buns filled with meat and vegetables.",
+            "category": ["Chinese", "appetizer"],
+            "present_price": 200,
+            "image": "https://img.freepik.com/premium-psd/bowl-chinese-food-with-beef-vegetables-transparent-background_927015-429.jpg"
+          },
+          {
+            "food_name": "Hot and Sour Soup",
+            "food_description": "Spicy and tangy soup with tofu, mushrooms, bamboo shoots, and pork.",
+            "category": ["Chinese", "soup"],
+            "previous_price": 100,
+            "present_price": 90,
+            "isPopular": "popular",
+            "image": "https://www.changonoodles.com/admin/images/blog/Blog-74246_soup.png"
+          },
+          {
+            "food_name": "Shrimp Fried Rice",
+            "food_description": "Stir-fried rice with shrimp, eggs, peas, and carrots.",
+            "category": ["Chinese", "rice"],
+            "previous_price": 180,
+            "present_price": 170,
+            "isPopular": "popular",
+            "image": "https://img.freepik.com/premium-psd/fried-rice-png-transparent_1085577-3893.jpg"
+          },
+          {
+            "food_name": "Szechuan Beef",
+            "food_description": "Spicy beef stir-fried with vegetables in a bold Szechuan sauce.",
+            "category": ["Chinese", "beef"],
+            "previous_price": 220,
+            "present_price": 210,
+            "isPopular": "popular",
+            "image": "https://static.vecteezy.com/system/resources/previews/048/091/243/non_2x/beef-and-broccoli-stir-fry-in-a-white-bowl-photo-png.png"
+          },
+          {
+            "food_name": "Spring Rolls",
+            "food_description": "Crispy rolls filled with vegetables and served with dipping sauce.",
+            "category": ["Chinese", "appetizer"],
+            "previous_price": 80,
+            "present_price": 70,
+            "isPopular": "popular",
+            "image": "https://img.freepik.com/premium-psd/spring-rolls-isolated-transparent-white-background-traditional-chinese-food-png_888962-294.jpg"
+          }
+      ]
     },
+  {
+    "restaurant_name": "Golden Wok",
+    "address": "789 Bamboo Lane, Chinatown",
+    "distance": "3.1 miles",
+    "popularity": 4.8,
+    "cuisine_type": ["Chinese", "Asian Fusion"],
+    "delivery_cost": "$2",
+    "delivery_time": "35 mins",
+    "image": "https://t4.ftcdn.net/jpg/00/36/00/67/360_F_36006739_EmbqVnk6ECDkDiyKefKGfaDOBppHEXLI.jpg",
+    "offers": [
+      {
+        "offer": "20% off",
+        "description": "Get 20% off on orders over $30."
+      },
+      {
+        "offer": "Free Drink",
+        "description": "Get a free soft drink with orders over TK20."
+      }
+    ],
+    "food": 
+    [
+      {
+        "food_name": "Beef Chow Mein",
+        "food_description": "Stir-fried noodles with tender beef and vegetables.",
+        "category": ["Chinese", "noodles"],
+        "previous_price": 160,
+        "present_price": 150,
+        "isPopular": "popular",
+        "image": "https://static.vecteezy.com/system/resources/previews/024/106/534/original/fresh-chicken-stir-fried-with-noodles-on-transparent-background-png.png"
+      },
+      {
+        "food_name": "General Tso's Chicken",
+        "food_description": "Crispy chicken in a sweet and spicy sauce.",
+        "category": ["Chinese", "chicken"],
+        "previous_price": 190,
+        "present_price": 180,
+        "image": "https://img.freepik.com/premium-psd/tasty-chinese-chicken-vegetable-dish-transparent-background_927015-976.jpg"
+      },
+      {
+        "food_name": "Hot and Sour Soup",
+        "food_description": "Spicy and tangy soup with tofu, mushrooms, and bamboo shoots.",
+        "category": ["Chinese", "soup"],
+        "present_price": 80,
+        "image": "https://wallpapers.com/images/hd/egg-drop-soup-chinese-png-mji-jn4net7m7r4s54id.jpg"
+      },
+      {
+        "food_name": "Shrimp Dumplings",
+        "food_description": "Steamed dumplings filled with fresh shrimp and seasonings.",
+        "category": ["Chinese", "appetizer"],
+        "present_price": 120,
+        "image": "https://img.lovepik.com/free-png/20211209/lovepik-fried-dumplings-png-image_401447457_wh1200.png"
+      },
+      {
+        "food_name": "Kung Pao Chicken",
+        "food_description": "Stir-fried chicken with peanuts, vegetables, and chili peppers in a spicy sauce.",
+        "category": ["Chinese", "chicken"],
+        "previous_price": 180,
+        "present_price": 170,
+        "isPopular": "popular",
+        "image": "https://w7.pngwing.com/pngs/792/5/png-transparent-fried-chicken-chinese-cuisine-sichuan-cuisine-spare-ribs-gold-garlic-bone-food-gold-coin-recipe.png"
+      },
+      {
+        "food_name": "Sweet and Sour soup",
+        "food_description": "Crispy pork pieces in a tangy sweet and sour sauce.",
+        "category": ["Chinese", "soup"],
+        "previous_price": 200,
+        "present_price": 190,
+        "isPopular": "popular",
+        "image": "https://thumbs.dreamstime.com/b/hot-sour-chinese-soup-white-bowl-25676671.jpg"
+      },
+      {
+        "food_name": "Beef Chow Mein",
+        "food_description": "Stir-fried noodles with tender beef and mixed vegetables.",
+        "category": ["Chinese", "noodles"],
+        "previous_price": 160,
+        "present_price": 150,
+        "isPopular": "popular",
+        "image": "https://p7.hiclipart.com/preview/15/63/754/instant-noodle-ramen-chinese-noodles-pasta-beef-noodle-soup-instant-noodles-thumbnail.jpg"
+      },
+      {
+        "food_name": "Mapo Tofu",
+        "food_description": "Spicy Sichuan dish with soft tofu and ground pork in a savory sauce.",
+        "category": ["Chinese", "tofu"],
+        "previous_price": 150,
+        "present_price": 140,
+        "isPopular": "popular",
+        "image": "https://miro.medium.com/v2/resize:fit:700/1*P9FrrzMuX-REkvx2FKl0xg.png"
+      },
+      {
+        "food_name": "Peking Duck",
+        "food_description": "Roasted duck served with thin pancakes, scallions, and hoisin sauce.",
+        "category": ["Chinese", "duck"],
+        "previous_price": 400,
+        "present_price": 380,
+        "isPopular": "popular",
+        "image": "https://img.freepik.com/premium-psd/plate-beef-rice-with-peppers-carrots-transparent-background_1232542-16507.jpg"
+      },
+      {
+        "food_name": "Beef Dim Sum Platter",
+        "food_description": "An assortment of steamed dumplings and buns with various fillings.",
+        "category": ["Chinese", "beef"],
+        "previous_price": 220,
+        "present_price": 210,
+        "isPopular": "popular",
+        "image": "https://thefoodietakesflight.com/wp-content/uploads/2021/01/vegan-chinese-style-no-beef-and-broccoli-recipe-16-682x1024.png"
+      }
+     
+    ]
+  },
     {
-        "restaurant_name": "The Muffin Man",
-        "food_name": "Blueberry Muffin",
-        "food_description": "A soft and fluffy muffin bursting with fresh blueberries and topped with a crumbly streusel topping.",
-        "image": "https://example.com/images/the_muffin_man_blueberry_muffin.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, cake, bakery",
-        "address": "606 Berry St, Downtown",
-        "distance": "1.4 miles",
-        "previous_cost": 3.49,
-        "previous_price": 3.99
-    },
-    {
-        "restaurant_name": "Delightful Desserts",
-        "food_name": "Tiramisu",
-        "food_description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.",
-        "image": "https://example.com/images/delightful_desserts_tiramisu.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Italian, cake, bakery",
-        "address": "707 Dessert Ave, Downtown",
-        "distance": "2.0 miles",
-        "previous_cost": 6.99,
-        "previous_price": 7.49
-    },
-    {
-        "restaurant_name": "Sugar & Spice Bakery",
-        "food_name": "Peach Cobbler",
-        "food_description": "Warm peach cobbler with a buttery, crumbly topping, served with a scoop of vanilla ice cream.",
-        "image": "https://example.com/images/sugar_spice_peach_cobbler.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, cake, bakery",
-        "address": "808 Sweet St, Downtown",
-        "distance": "1.7 miles",
-        "previous_cost": 5.49,
-        "previous_price": 5.99
-    },
-    {
-        "restaurant_name": "Artisan Bakes",
-        "food_name": "Raisin Scone",
-        "food_description": "A tender scone packed with plump raisins and a hint of cinnamon, perfect with a cup of tea.",
-        "image": "https://example.com/images/artisan_bakes_raisin_scone.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "15 mins",
-        "popularity": "popular",
-        "cuisine_type": "British, cake, bakery",
-        "address": "909 Cranberry Ln, Downtown",
-        "distance": "1.0 miles",
-        "previous_cost": 3.49,
-        "previous_price": 3.99
-    },
-    {
-        "restaurant_name": "Flour Power",
-        "food_name": "Carrot Cake",
-        "food_description": "Moist carrot cake with walnuts and a rich cream cheese frosting, topped with a sprinkle of cinnamon.",
-        "image": "https://example.com/images/flour_power_carrot_cake.jpg",
+        "restaurant_name": "Bakery and Cake",
+        "address": "456 Sweet Ave, Bakersville",
+        "distance": "0.8 miles",
+        "popularity": 4.8,
+        "cuisine_type": ["Bakery", "Desserts"],
         "delivery_cost": "free",
         "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch",
-        "address": "101 Cinnamon St, Downtown",
-        "distance": "1.4 miles",
-        "previous_cost": 6.49,
-        "previous_price": 6.99
+        "image": "https://w7.pngwing.com/pngs/450/256/png-transparent-bakery-logo-thumbnail.png",
+        "offers": [
+            {
+                "offer": "Buy 1 Get 1 Free",
+                "description": "Applicable on all croissants. Limited time offer."
+            },
+            {
+                "offer": "20% off (BAKELOVER)",
+                "description": "Minimum order TK 200. Use during checkout."
+            }
+        ],
+        "food": [
+            {
+                "food_name": "Chocolate Croissant",
+                "food_description": "Flaky croissant filled with rich, dark chocolate.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 120,
+                "present_price": 110,
+                "isPopular": "popular",
+                "image": "https://img.lovepik.com/free-png/20210919/lovepik-bread-png-image_400368623_wh1200.png"
+            },
+            {
+                "food_name": "Chocolate Cake",
+                "food_description": "Moist cake filled with rich, dark chocolate.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 120,
+                "present_price": 110,
+                "isPopular": "popular",
+                "image": "https://w7.pngwing.com/pngs/1006/312/png-transparent-chocolate-truffle-chocolate-cake-birthday-cake-sachertorte-cake-cream-baked-goods-food.png"
+            },
+            {
+                "food_name": "Vanilla Cake",
+                "food_description": "Moist cake filled with rich, vanilla.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 120,
+                "present_price": 110,
+                "isPopular": "popular",
+                "image": "https://atlas-content-cdn.pixelsquid.com/stock-images/happy-birthday-cake-nrdY9q9-600.jpg"
+            },
+            {
+                "food_name": "Blueberry Muffin",
+                "food_description": "Soft muffin bursting with fresh blueberries.",
+                "category": ["bakery", "muffin", "pastry"],
+                "previous_price": 80,
+                "present_price": 70,
+                "isPopular": "popular",
+                "image": "https://e7.pngegg.com/pngimages/344/602/png-clipart-cupcake-frosting-icing-pastry-bakery-cake-cream-food.png"
+            },
+            {
+                "food_name": "Rusberry Muffin",
+                "food_description": "Soft muffin bursting with fresh rusberries.",
+                "category": ["bakery", "muffin", "pastry"],
+                "previous_price": 80,
+                "present_price": 70,
+                "isPopular": "popular",
+                "image": "https://pngfile.net/public/uploads/preview/birthday-cake-png-01-01-3156667166161t39nfsal.png"
+            },
+            {
+                "food_name": "Cinnamon Roll",
+                "food_description": "Sweet roll topped with cinnamon glaze.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 100,
+                "present_price": 90,
+                "isPopular": "popular",
+                "image": "https://e7.pngegg.com/pngimages/665/788/png-clipart-bakery-marmalade-pastry-bread-cafe-bread-baked-goods-food.png"
+            },
+            {
+                "food_name": "Sourdough Bread",
+                "food_description": "Crusty and tangy artisan sourdough loaf.",
+                "category": ["bakery", "bread"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://pics.clipartpng.com/Bread_PNG_Clip_Art-2218.png"
+            },
+            {
+                "food_name": "Plain Bread",
+                "food_description": "Crusty and tangy artisan regular loaf.",
+                "category": ["bakery", "bread"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://pics.clipartpng.com/Sandwich_Bread_PNG_Clip_Art-2221.png"
+            },
+            {
+                "food_name": "Plain Cake",
+                "food_description": "Moist cake filled with rich, vanilla.",
+                "category": ["bakery", "bread"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://freepngimg.com/thumb/bread/17-bread-png-image.png"
+            },
+            {
+                "food_name": "Almond Biscotti",
+                "food_description": "Crunchy biscotti with roasted almonds.",
+                "category": ["bakery", "biscuit"],
+                "previous_price": 60,
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://img.lovepik.com/free-png/20211210/lovepik-baking-bread-png-image_401464462_wh1200.png"
+            }
+        ]
     },
     {
-        "restaurant_name": "Cupcake Craze",
-        "food_name": "Vanilla Bean Cupcake",
-        "food_description": "A light and fluffy vanilla bean cupcake topped with rich vanilla buttercream frosting and sprinkles.",
-        "image": "https://example.com/images/cupcake_craze_vanilla_bean.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "American, cake, bakery",
-        "address": "202 Frosting Ave, Downtown",
-        "distance": "1.2 miles",
-        "previous_cost": 3.49,
-        "previous_price": 3.99
+            "restaurant_name": "Sweet Cravings Bakery",
+            "address": "789 Pastry Ln, Dhaka",
+            "distance": "2.0 miles",
+            "popularity": 4.6,
+            "cuisine_type": ["Bakery", "Desserts"],
+            "delivery_cost": "TK 50",
+            "delivery_time": "35 mins",
+            "image": "https://i.pinimg.com/736x/45/4a/b2/454ab2faf218a4725af44aae82660384.jpg",
+            "offers": 
+        [
+            {
+                    "offer": "15% off (SWEETDEAL)",
+                    "description": "Valid for all items over TK 300."
+            },
+            {
+                "offer": "Free Cookie with Orders over TK 250",
+                "description": "Add a free cookie to your order when you spend over TK 250."
+            }
+        ],
+            "food": 
+        [
+            {
+                "food_name": "Chocolate Cake",
+                "food_description": "Chocolate moist cake with cream cheese frosting.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 90,
+                "present_price": 85,
+                "isPopular": "popular",
+                "image": "https://www.pngarts.com/files/3/Chocolate-Cake-PNG-High-Quality-Image-1.png"
+            },
+            {
+                "food_name": "Red Velvet Cupcake",
+                "food_description": "Moist red velvet cupcake with cream cheese frosting.",
+                "category": ["bakery", "cupcake", "pastry"],
+                "previous_price": 90,
+                "present_price": 85,
+                "isPopular": "popular",
+                "image": "https://img.freepik.com/free-psd/fresh-tasty-cupcake-isolated-transparent-background_84443-1748.jpg"
+            },
+            {
+                "food_name": "Red Velvet Cake",
+                "food_description": "Moist red velvet cupcake with cream cheese frosting.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 90,
+                "present_price": 85,
+                "isPopular": "popular",
+                "image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3dvcmxkZmFjZXNsYWJfcmVhbF9waG90b19vZl9iaXJ0aGRheV9yZWRfdmVsdmV0X2Nha2VfaXNvbGF0ZWRfb18xOTEwMWRjZi0yNmMzLTQ3N2YtOTEyZS1mNWI5OGFkNDJhYTdfMS5qcGc.jpg"
+            },
+            {
+                "food_name": "Vanilla  Cake",
+                "food_description": "Moist plain vanilla cake with cream cheese frosting.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 90,
+                "present_price": 85,
+                "isPopular": "popular",
+                "image": "https://pngimg.com/d/cake_PNG97011.png"
+            },
+            {
+                "food_name": "Butter Croissant",
+                "food_description": "Classic French-style butter croissant.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 100,
+                "present_price": 95,
+                "isPopular": "popular",
+                "image": "https://png.pngtree.com/element_our/20190601/ourmid/pngtree-two-breads-image_1333136.jpg"
+            },
+            {
+                "food_name": "Pumpkin Pie",
+                "food_description": "Traditional pumpkin pie with a flaky crust.",
+                "category": ["bakery", "pie", "pastry"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://img.freepik.com/free-psd/pie-isolated-transparent-background_191095-32540.jpg"
+            },
+            {
+                "food_name": "Vanilla Pumpkin Pie",
+                "food_description": "Traditional pumpkin pie with a flaky crust.",
+                "category": ["bakery", "pie", "pastry"],
+                "previous_price": 150,
+                "present_price": 140,
+                "isPopular": "popular",
+                "image": "https://static.vecteezy.com/system/resources/previews/021/027/227/non_2x/apple-pie-transparent-png.png"
+            },
+            {
+                "food_name": "Cheese Danish",
+                "food_description": "Soft pastry with a sweet cream cheese filling.",
+                "category": ["bakery", "pastry"],
+                "previous_price": 120,
+                "present_price": 110,
+                "isPopular": "popular",
+                "image": "https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-two-croissant-bread-isolated-element-png-image_11626172.png"
+            },
+            {
+                "food_name": "Oatmeal Raisin Cookie",
+                "food_description": "Chewy cookie filled with oats and raisins.",
+                "category": ["bakery", "cookie"],
+                "previous_price": 60,
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://img.freepik.com/free-photo/delicious-cookies-arrangement_23-2150707201.jpg"
+            },
+            {
+                "food_name": "Wheat Raisin Cookie",
+                "food_description": "Chewy cookie filled with wheat and raisins.",
+                "category": ["bakery", "cookie"],
+                "previous_price": 60,
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://i.pinimg.com/736x/06/dd/6c/06dd6c7c83fdc8f5ab96db92955f5ae9.jpg"
+            }
+        ]
     },
     {
-        "restaurant_name": "Dhaka Delights",
-        "food_name": "Biryani",
-        "food_description": "Fragrant basmati rice cooked with marinated chicken, spices, and saffron, served with raita and salad.",
-        "image": "https://example.com/images/dhaka_delights_biryani.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, biriyani",
-        "address": "123 Royal St, Dhaka",
-        "distance": "2.0 miles",
-        "previous_cost": 12.99,
-        "previous_price": 13.49
+          "restaurant_name": "Pak Ghaor",
+          "address": "72 Sylhet Road, Dhaka",
+          "distance": "3.5 miles",
+          "popularity": 4.6,
+          "cuisine_type": ["Bangladeshi", "traditional"],
+          "delivery_cost": "TK 30",
+          "delivery_time": "45 mins",
+          "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6cd61299808371.5efb1ffb143a8.jpg",
+          "offers": [
+            {
+              "offer": "10% off",
+              "description": "Minimum order TK 299 on traditional items"
+            },
+            {
+              "offer": "25% off (SylhetFeast)",
+              "description": "Minimum order TK 500 on any item"
+            },
+            {
+                "offer": "20% off (BiryaniSpecial)",
+                "description": "Minimum order TK 299 and valid on Biryani"
+              },
+              {
+                "offer": "10% off (JhalmuriTreat)",
+                "description": "Minimum order TK 150 and valid for street food items"
+              }
+        ],
+          "food": 
+        [
+            {
+              "food_name": "Chingri Bhorta",
+              "food_description": "A spicy mashed shrimp dish with mustard oil and chilies.",
+              "category": ["Bangladeshi", "Bhorta"],
+              "previous_price": 150,
+              "present_price": 140,
+              "isPopular": "popular",
+              "image": "https://png.pngtree.com/png-vector/20240515/ourlarge/pngtree-flavorful-chicken-curry-dish-rich-and-savory-desi-for-beginners-isolated-png-image_12471011.png"
+            },
+            {
+              "food_name": "Beef Kala Bhuna",
+              "food_description": "A rich, slow-cooked beef curry in dark, aromatic spices.",
+              "category": ["bangladeshi", "main course", "beef"],
+              "previous_price": 300,
+              "present_price": 270,
+              "isPopular": "popular",
+              "image": "https://png.pngtree.com/png-clipart/20231013/original/pngtree-aromatic-spice-delight-a-spicy-delicious-mutton-curry-highlighting-texture-set-png-image_13295952.png"
+            },
+            {
+              "food_name": "Mishti Doi",
+              "food_description": "A creamy, sweetened yogurt dessert, a Bengali delicacy.",
+              "category": ["Bangladeshi", "Desserts"],
+              "previous_price": 60,
+              "present_price": 55,
+              "image": "https://png.pngtree.com/png-vector/20240515/ourlarge/pngtree-flavorful-chicken-curry-dish-rich-and-savory-desi-for-beginners-isolated-png-image_12471011.png"
+            },
+            {
+              "food_name": "Piyaju",
+              "food_description": "Crispy fried lentil fritters, popular as an evening snack.",
+              "category": ["Bangladeshi", "Snacks"],
+              "previous_price": 20,
+              "present_price": 15,
+              "image": "https://png.pngtree.com/png-vector/20240515/ourlarge/pngtree-flavorful-chicken-curry-dish-rich-and-savory-desi-for-beginners-isolated-png-image_12471011.png"
+            },
+            {
+                "food_name": "Beef Bhuna Khichuri",
+                "food_description": "A flavorful dish with beef curry mixed with traditional khichuri.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 250,
+                "present_price": 230,
+                "isPopular": "popular",
+                "image": "https://graficsea.com/wp-content/uploads/2023/08/Chicken-Tikka-Biryani-PNG-Image.jpg"
+              },
+            {
+              "food_name": "Roshogolla",
+              "food_description": "Soft, spongy sweet dumplings soaked in sugar syrup.",
+              "category": ["Bangladeshi", "Desserts"],
+              "present_price": 40,
+              "isPopular": "popular",
+              "image": "https://www.spiceroots.com/spiceroots/wp-content/uploads/2008/05/butterchicken.jpg"
+            },
+            {
+                "food_name": "Chicken Tehari",
+                "food_description": "A spiced rice dish with tender chicken, slow-cooked to perfection.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 200,
+                "present_price": 180,
+                "isPopular": "popular",
+                "image": "https://wallpapers.com/images/high/vegetable-biryani-dish-v2qh3il7negxy1iz-2.png"
+              },
+            {
+                "food_name": "Beef Tehari",
+                "food_description": "A spiced rice dish with tender beef, slow-cooked to perfection.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 200,
+                "present_price": 180,
+                "isPopular": "popular",
+                "image": "https://static.vecteezy.com/system/resources/previews/038/450/441/non_2x/ai-generated-a-plate-of-chicken-biryani-isolated-on-transparent-background-free-png.png"
+              },
+              {
+                "food_name": "Shingara",
+                "food_description": "A crispy fried pastry filled with spiced potato and vegetables.",
+                "category": ["Bangladeshi", "Snacks"],
+                "previous_price": 30,
+                "present_price": 25,
+                "image": "https://madcreationshub.com/wp-content/uploads/2019/07/Copy-of-MAD-10.png"
+              },
+              {
+                "food_name": "Panta Ilish",
+                "food_description": "A classic Bengali dish with fermented rice and fried hilsa fish.",
+                "category": ["Bangladeshi", "main course", "fish"],
+                "previous_price": 350,
+                "present_price": 320,
+                "isPopular": "popular",
+                "image": "https://images.picxy.com/cache/2020/7/11/ded62f9602f3410bd5c41827189d8351.jpg"
+              },
+              {
+                "food_name": "Beguni",
+                "food_description": "Fried eggplant slices dipped in gram flour batter.",
+                "category": ["Bangladeshi", "Snacks"],
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://images.ctfassets.net/pjshm78m9jt4/2ztPXqKoegD6HmUWmTFgQe/9b9cad93beb396b3d801a46825c8933a/Chicken_Curry.png"
+              }
+        ]
     },
     {
-        "restaurant_name": "Bangla Bites",
-        "food_name": "Khichuri",
-        "food_description": "Comforting rice and lentil stew with vegetables, flavored with cumin, turmeric, and ghee.",
-        "image": "https://example.com/images/bangla_bites_khichuri.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, khichuri",
-        "address": "456 Spice Ave, Dhaka",
-        "distance": "1.5 miles",
-        "previous_cost": 9.49,
-        "previous_price": 9.99
-    },
-    {
-        "restaurant_name": "Taste of Bengal",
-        "food_name": "Panta Ilish",
-        "food_description": "Fermented rice soaked in water, served with hilsa fish, green chilies, and onions.",
-        "image": "https://example.com/images/taste_of_bengal_panta_ilish.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, hilsha",
-        "address": "789 River Rd, Dhaka",
-        "distance": "2.2 miles",
-        "previous_cost": 14.99,
-        "previous_price": 15.49
-    },
-    {
-        "restaurant_name": "Saffron Kitchen",
-        "food_name": "Ruti & Dal",
-        "food_description": "Soft whole wheat flatbreads served with a hearty lentil soup seasoned with spices.",
-        "image": "https://example.com/images/saffron_kitchen_ruti_dal.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "25 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, breakfast",
-        "address": "101 Spice St, Dhaka",
-        "distance": "1.8 miles",
-        "previous_cost": 7.99,
-        "previous_price": 8.49
-    },
-    {
-        "restaurant_name": "Spice Symphony",
-        "food_name": "Beef Kebab",
-        "food_description": "Tender beef pieces marinated in spices and grilled to perfection, served with naan and mint chutney.",
-        "image": "https://example.com/images/spice_symphony_beef_kebab.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch",
-        "address": "202 Flavor St, Dhaka",
-        "distance": "1.6 miles",
-        "previous_cost": 11.99,
-        "previous_price": 12.49
-    },
-    {
-        "restaurant_name": "Royal Rasoi",
-        "food_name": "Chingri Malai Curry",
-        "food_description": "Shrimp cooked in a creamy coconut milk curry with aromatic spices and a hint of cilantro.",
-        "image": "https://example.com/images/royal_rasoi_chingri_malai.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, fish",
-        "address": "303 Curry Ave, Dhaka",
-        "distance": "1.7 miles",
-        "previous_cost": 13.49,
-        "previous_price": 13.99
-    },
-    {
-        "restaurant_name": "Curry Corner",
-        "food_name": "Mutton Korma",
-        "food_description": "Rich and creamy mutton curry with a blend of spices, yogurt, and nuts, served with biryani rice.",
-        "image": "https://example.com/images/curry_corner_mutton_korma.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, mutton",
-        "address": "404 Spice Rd, Dhaka",
-        "distance": "2.1 miles",
-        "previous_cost": 14.99,
-        "previous_price": 15.49
-    },
-    {
-        "restaurant_name": "Bangladesh Bistro",
-        "food_name": "Pithas",
-        "food_description": "Traditional rice cakes made with coconut, jaggery, and various fillings, available in sweet and savory options.",
-        "image": "https://example.com/images/bangladesh_bistro_pithas.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, snack",
-        "address": "505 Pitha St, Dhaka",
-        "distance": "1.9 miles",
-        "previous_cost": 6.49,
-        "previous_price": 6.99
-    },
-    {
-        "restaurant_name": "Bangla Delicacies",
-        "food_name": "Aloo Bhorta",
-        "food_description": "Mashed potatoes cooked with mustard oil, green chilies, and onions, served with steamed rice.",
-        "image": "https://example.com/images/bangla_delicacies_aloo_bhorta.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "20 mins",
-        "popularity": 4.4,
-        "cuisine_type": "Deshi, lunch",
-        "address": "606 Flavor Rd, Dhaka",
-        "distance": "1.5 miles",
-        "previous_cost": 7.99,
-        "previous_price": 8.49
-    },
-    {
-        "restaurant_name": "Flavors of Dhaka",
-        "food_name": "Hilsa Fish Fry",
-        "food_description": "Fried hilsa fish marinated in a blend of spices, served with green chutney and lemon wedges.",
-        "image": "https://example.com/images/flavors_of_dhaka_hilsa_fish_fry.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch, fish",
-        "address": "707 River Rd, Dhaka",
-        "distance": "2.2 miles",
-        "previous_cost": 12.49,
-        "previous_price": 12.99
-    },
-    {
-        "restaurant_name": "Dhaka Hotel",
-        "food_name": "vorta platter",
-        "food_description": "Steamed rice served with a spicy potato eggplant and tomato mash, along with pickles and yogurt.",
-        "image": "https://example.com/images/dhaka_treats_litti_chokha.jpg",
-        "delivery_cost": "free",
-        "delivery_time": "30 mins",
-        "popularity": "popular",
-        "cuisine_type": "Deshi, lunch",
-        "address": "808 Taste St, Dhaka",
-        "distance": "1.8 miles",
-        "previous_cost": 9.49,
-        "previous_price": 9.99
-    }
+          "restaurant_name": "Petuker Astana",
+          "address": "88 Agrabad, Dhaka",
+          "distance": "2.8 miles",
+          "popularity": 4.9,
+          "cuisine_type": ["Bangladeshi", "Chattogram"],
+          "delivery_cost": "TK 20",
+          "delivery_time": "35 mins",
+          "image": "https://i.pinimg.com/736x/62/fa/d7/62fad784896d8499b10b24bdb692b4e4.jpg",
+          "offers": 
+        [
+            {
+              "offer": "20% off",
+              "description": "Minimum order TK 350 on all items"
+            },
+            {
+              "offer": "Free dessert",
+              "description": "Free dessert on orders above TK 500"
+            },
+            {
+                "offer": "30% off (FusionDeal)",
+                "description": "Minimum order TK 700 for modern fusion items"
+            }
+        ],
+          "food": 
+        [
+            {
+              "food_name": "Mezban Beef",
+              "food_description": "Traditional Chattogram-style beef curry with robust flavors.",
+              "category": ["Bangladeshi", "Main Course", "beef"],
+              "previous_price": 280,
+              "present_price": 260,
+              "isPopular": "popular",
+              "image": "https://zarskitchen.com/wp-content/uploads/2021/02/screenshot-2021-02-21-at-22.37.19.png"
+            },
+            {
+              "food_name": "Fuchka",
+              "food_description": "Crispy, hollow puris filled with spiced tamarind water and chickpeas.",
+              "category": ["Bangladeshi", "street Food"],
+              "previous_price": 50,
+              "present_price": 40,
+              "isPopular": "popular",
+              "image": "https://www.kilobiryani.co.uk/wp-content/uploads/2021/08/hqdefault.jpg"
+            },
+            {
+                "food_name": "Beguni",
+                "food_description": "Fried eggplant slices dipped in gram flour batter.",
+                "category": ["Bangladeshi", "Snacks", "street Food"],
+                "present_price": 50,
+                "isPopular": "popular",
+                "image": "https://www.cookingmummy.com/wp-content/uploads/2022/02/filipino-chicken-curry-1-1-600x500.png"
+              },
+              {
+                "food_name": "Beef Tehari",
+                "food_description": "A spiced rice dish with tender beef, slow-cooked to perfection.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 200,
+                "present_price": 180,
+                "isPopular": "popular",
+                "image": "https://pngbuy.com/wp-content/uploads/2023/06/Non-Veg-biryani-png.png"
+              },
+              {
+                "food_name": "Beef kachchhi",
+                "food_description": "A spiced rice dish with tender beef, slow-cooked to perfection.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 220,
+                "present_price": 250,
+                "isPopular": "popular",
+                "image": "https://e7.pngegg.com/pngimages/804/495/png-clipart-cooked-food-with-rice-fizzy-drinks-hyderabadi-biryani-chicken-65-biryani-food-animals.png"
+              },
+              {
+                "food_name": "Mutton kachchhi",
+                "food_description": "A spiced rice dish with tender mutton, slow-cooked to perfection.",
+                "category": ["Bangladeshi", "main course", "rice"],
+                "previous_price": 250,
+                "present_price": 240,
+                "isPopular": "popular",
+                "image": "https://png.pngtree.com/png-vector/20240515/ourlarge/pngtree-one-plate-chicken-biryani-png-image_12465138.png"
+              },
+            {
+              "food_name": "Chicken Rezala",
+              "food_description": "A mild, creamy chicken curry with cardamom and saffron.",
+              "category": ["Bangladeshi", "main course", "chicken"],
+              "previous_price": 220,
+              "present_price": 200,
+              "image": "https://png.pngtree.com/png-clipart/20230529/original/pngtree-spicy-chicken-curry-png-image_9173013.png"
+            },
+            {
+              "food_name": "Chingri Malaikari",
+              "food_description": "Prawns cooked in coconut milk with mild spices, a coastal favorite.",
+              "category": ["Bangladeshi", "main course", "fish"],
+              "previous_price": 350,
+              "present_price": 330,
+              "isPopular": "popular",
+              "image": "https://images.squarespace-cdn.com/content/v1/598f2a3a37c581edc420c362/1519402512398-YN1Y1VZO4TAPDO9V189D/sweet-red-pepper-chicken-curry.png"
+            },
+            {
+              "food_name": "Rui Macher Jhol",
+              "food_description": "A light and fragrant fish curry made with Rui fish and vegetables.",
+              "category": ["Bangladeshi", "main course", "fish"],
+              "previous_price": 180,
+              "present_price": 170,
+              "image": "https://www.healthyfood.com/wp-content/uploads/2017/03/HFG-Thai-chicken-curry-1-1024x683.jpg"
+            }
+          ]
+        },
+        {
+              "restaurant_name": "Home Kitchen Delights",
+              "address": "456 Elm St, Oakwood",
+              "distance": "2.5 miles",
+              "popularity": 4.9,
+              "cuisine_type": ["Home-made", "Traditional"],
+              "delivery_cost": "free",
+              "delivery_time": "45 mins",
+              "image": "https://dcassetcdn.com/design_img/1871193/177035/177035_10131085_1871193_acdfc01a_image.png",
+              "offers": [
+                {
+                  "offer": "15% off",
+                  "description": "Minimum order TK 399 for regular customers."
+                },
+                {
+                  "offer": "20% off (FAMILYMEAL)",
+                  "description": "Valid for all orders above TK 299."
+                }
+            ],
+              "food": 
+            [
+                {
+                  "food_name": "Homestyle Chicken Curry",
+                  "food_description": "Tender chicken pieces cooked in rich, spicy gravy.",
+                  "category": ["home-made", "curry"],
+                  "previous_price": 180,
+                  "present_price": 170,
+                  "isPopular": "popular",
+                  "image": "https://img.favpng.com/21/11/15/indian-cuisine-korma-chicken-curry-red-curry-png-favpng-bxfAEcJ2MKhhtHcyt91FyvWpR.jpg"
+                },
+                {
+                  "food_name": "Vegetable Korma",
+                  "food_description": "Mixed vegetables cooked in creamy korma sauce with spices.",
+                  "category": ["home-made", "vegetarian"],
+                  "previous_price": 120,
+                  "present_price": 110,
+                  "image": "https://p.kindpng.com/picc/s/161-1619464_indian-curry-png-rice-and-curry-png-transparent.png"
+                },
+                {
+                  "food_name": "Homemade Beef Stew",
+                  "food_description": "Slow-cooked beef with potatoes and carrots in a rich broth.",
+                  "category": ["home-made", "stew"],
+                  "previous_price": 200,
+                  "present_price": 190,
+                  "isPopular": "popular",
+                  "image": "https://us2guntur.com/images//10077img/chickencurry_B_191020.jpg"
+                },
+                {
+                  "food_name": "Classic Meatloaf",
+                  "food_description": "A hearty meatloaf made with ground beef and spices.",
+                  "category": ["home-made", "meat"],
+                  "present_price": 150,
+                  "isPopular": "popular",
+                  "image": "https://i.pinimg.com/736x/a8/e0/1b/a8e01b12ed65c4ab008e4d95e0866f9c.jpg"
+                },
+                {
+                  "food_name": "Spaghetti Bolognese",
+                  "food_description": "Homemade spaghetti with a rich, meaty tomato sauce.",
+                  "category": ["home-made", "pasta"],
+                  "previous_price": 170,
+                  "present_price": 160,
+                  "image": "https://playswellwithbutter.com/wp-content/uploads/2021/02/Thai-Green-Curry-with-Chicken-Vegetables-11-960x1440.jpg"
+                },
+                {
+                  "food_name": "Baked Ziti",
+                  "food_description": "Ziti pasta baked with tomato sauce, cheese, and herbs.",
+                  "category": ["home-made", "pasta"],
+                  "previous_price": 180,
+                  "present_price": 170,
+                  "isPopular": "popular",
+                  "image": "https://www.healthyfood.com/wp-content/uploads/2017/03/HFG-Thai-chicken-curry-1-1024x683.jpg"
+                },
+                {
+                  "food_name": "Beef Stroganoff",
+                  "food_description": "Tender beef strips in a creamy mushroom sauce, served with noodles.",
+                  "category": ["home-made", "stew"],
+                  "previous_price": 200,
+                  "present_price": 180,
+                  "image": "https://skinnymixers.com.au/wp-content/uploads/2014/10/Chicken-Tikka-Masala-Thermomix-Curry.png"
+                },
+                {
+                  "food_name": "Vegetarian Lasagna",
+                  "food_description": "Layers of pasta, vegetables, and cheese baked to perfection.",
+                  "category": ["home-made", "vegetarian"],
+                  "previous_price": 190,
+                  "present_price": 180,
+                  "isPopular": "popular",
+                  "image": "https://img.freepik.com/free-photo/vegetarian-lasagna_23-2148472345.jpg"
+                },
+                {
+                  "food_name": "Chicken Alfredo",
+                  "food_description": "Creamy Alfredo sauce with grilled chicken over fettuccine pasta.",
+                  "category": ["home-made", "pasta"],
+                  "previous_price": 210,
+                  "present_price": 200,
+                  "isPopular": "popular",
+                  "image": "https://nafda.com.au/wp-content/uploads/2021/08/NAFDA-Fijian-chicken-curry.png"
+                },
+                {
+                  "food_name": "Mushroom Risotto",
+                  "food_description": "Creamy rice dish with mushrooms and Parmesan cheese.",
+                  "category": ["home-made", "rice"],
+                  "previous_price": 160,
+                  "present_price": 150,
+                  "image": "https://miro.medium.com/v2/resize:fit:1400/1*N7HWOqsTSMPdL6X-kgJUBw.png"
+                }
+            ]
+        },
+        {
+              "restaurant_name": "Homemade Heaven",
+              "address": "789 Maple Rd, Green Valley",
+              "distance": "3.1 miles",
+              "popularity": 4.8,
+              "cuisine_type": ["Home-made", "Comfort Food"],
+              "delivery_cost": "free",
+              "delivery_time": "40 mins",
+              "image": "https://t4.ftcdn.net/jpg/03/74/73/77/360_F_374737714_I26ISLiGAUAOptpAWceS0CFyXveIi8cq.jpg",
+              "offers": [
+                {
+                  "offer": "Buy 1 Get 1 Free",
+                  "description": "Valid for select dishes every Wednesday."
+                },
+                {
+                  "offer": "10% off (WEEKENDTREAT)",
+                  "description": "Valid on orders over TK 299 during weekends."
+                }
+            ],
+              "food": 
+            [
+                {
+                  "food_name": "Chicken Pot Pie",
+                  "food_description": "A savory pie filled with chicken, vegetables, and a creamy sauce.",
+                  "category": ["home-made", "pie"],
+                  "previous_price": 150,
+                  "present_price": 140,
+                  "isPopular": "popular",
+                  "image": "https://mediavine-res.cloudinary.com/image/upload/s--OKfOZKPD--/ar_4:3,c_fill,f_auto,fl_lossy,q_auto/v1726036580/ubhvixnkg7ammfshrwfs.jpg"
+                },
+                {
+                  "food_name": "Shepherd's Pie",
+                  "food_description": "Ground beef and vegetables topped with mashed potatoes and baked.",
+                  "category": ["home-made", "pie"],
+                  "previous_price": 170,
+                  "present_price": 160,
+                  "image": "https://i.redd.it/nx0o7d5q6ca91.png"
+                },
+                {
+                  "food_name": "Mac and Cheese",
+                  "food_description": "Creamy baked macaroni with melted cheddar cheese.",
+                  "category": ["home-made", "pasta"],
+                  "previous_price": 100,
+                  "present_price": 90,
+                  "isPopular": "popular",
+                  "image": "https://i.ytimg.com/vi/_ij48noiBrU/maxresdefault.jpg"
+                },
+                {
+                  "food_name": "Beef Chili",
+                  "food_description": "Slow-cooked chili with ground beef, beans, and spices.",
+                  "category": ["home-made", "stew"],
+                  "previous_price": 150,
+                  "present_price": 140,
+                  "isPopular": "popular",
+                  "image": "https://cdn.prod.website-files.com/5e8f5614a438dde426002a6e/63c0747a5e580a741af6a532_Joshua%20Weissman%20Butter%20Chicken.png"
+                },
+                {
+                  "food_name": "Homemade Meatballs",
+                  "food_description": "Juicy meatballs in a rich tomato sauce, served with spaghetti.",
+                  "category": ["home-made", "meat"],
+                  "previous_price": 180,
+                  "present_price": 170,
+                  "image": "https://lh5.googleusercontent.com/-NJf9vABbbcc/VC3ddqcNlhI/AAAAAAAAa7E/3WlqXwW1VAg/s800/Chicken-Curry.png"
+                },
+                {
+                  "food_name": "Baked Chicken Parmesan",
+                  "food_description": "Breaded chicken topped with marinara sauce and melted cheese.",
+                  "category": ["home-made", "chicken"],
+                  "previous_price": 220,
+                  "present_price": 210,
+                  "isPopular": "popular",
+                  "image": "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yOV90b3Bfdmlld19waG90b19vZl9pbmRpYW5fYnV0dGVyX2NoaWNrZW5fY3Vycl9lMWUzMGIzYS05MDI4LTQxZmYtOTY3Ny0yYjlhODdkZmU1NTAucG5n.png"
+                },
+                {
+                  "food_name": "Stuffed Bell Peppers",
+                  "food_description": "Bell peppers stuffed with rice, ground beef, and vegetables.",
+                  "category": ["home-made", "vegetable"],
+                  "previous_price": 140,
+                  "present_price": 130,
+                  "image": "https://www.pureandsimplenourishment.com/wp-content/uploads/2013/02/Mango-chicken-curry-feature-image.png"
+                },
+                {
+                  "food_name": "Eggplant Parmesan",
+                  "food_description": "Layered eggplant slices with marinara sauce and melted cheese.",
+                  "category": ["home-made", "vegetarian"],
+                  "previous_price": 160,
+                  "present_price": 150,
+                  "isPopular": "popular",
+                  "image": "https://www.ambitiouskitchen.com/wp-content/uploads/2020/01/Slow-Cooker-Yellow-Chicken-Curry-4-170x170.jpg"
+                },
+                {
+                  "food_name": "Homemade Apple Pie",
+                  "food_description": "A classic apple pie with a flaky crust and cinnamon-spiced apples.",
+                  "category": ["home-made", "dessert"],
+                  "previous_price": 100,
+                  "present_price": 90,
+                  "isPopular": "popular",
+                  "image": "https://images.squarespace-cdn.com/content/v1/598f2a3a37c581edc420c362/1519402512398-YN1Y1VZO4TAPDO9V189D/sweet-red-pepper-chicken-curry.png"
+                },
+                {
+                  "food_name": "Chicken Tikka Masala",
+                  "food_description": "Grilled chicken in a creamy tomato-based sauce, served with rice.",
+                  "category": ["home-made", "curry"],
+                  "previous_price": 220,
+                  "present_price": 210,
+                  "isPopular": "popular",
+                  "image": "https://www.healthyfood.com/wp-content/uploads/2017/03/HFG-Thai-chicken-curry-1-1024x683.jpg"
+                }
+            ]
+        }        
 ]
