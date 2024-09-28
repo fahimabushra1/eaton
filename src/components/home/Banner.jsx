@@ -1,5 +1,5 @@
 import avatar from "../../assets/images/Avatar.png";
-import bannerImage from "../../assets/images/bannerImage.png";
+// import bannerImage from "../../assets/images/bannerImage.png";
 import logo1 from "../../assets/images/logo1.png";
 import logo3 from "../../assets/images/logo3.png";
 import logo4 from "../../assets/images/logo-4.png";
@@ -33,7 +33,7 @@ const Banner = () => {
                     </div>
             </div>
             <div>
-                 <img src={bannerImage} alt="banner image" />
+                 {/* <img src={bannerImage} alt="banner image" /> */}
             </div>
             <div className="ml-4">
                 <div className="flex justify-center items-center gap-2">

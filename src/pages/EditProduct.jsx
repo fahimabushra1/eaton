@@ -11,7 +11,7 @@ const EditProduct = () => {
     console.log(food)
 
     const [restaurantName, setRestaurantName] = useState(food?.restaurant_name);
-    const [productName, setProductName] = useState(food?.food_name);
+    const [productName, setProductName] = useState(food?.food[0].food_name);
     const [category, setCategory] = useState(food?.cuisine_type);
     const [deliveryCost, setDeliveryCost] = useState(food?.delivery_cost);
     const [deliveryTime, setDeliveryTime] = useState(food?.delivery_time);
@@ -21,6 +21,7 @@ const EditProduct = () => {
     const [presentPrice, setPresentPrice] = useState(food?.previous_price);
     const [popularity, setPopularity] = useState(food?.popularity);
     const [previousPrice, setPreviousPrice] = useState(food?.previous_cost);
+    const [image, setImage] = useState(food?.image);
 
 
       const handleSubmit= async (e)=>{
@@ -130,7 +131,7 @@ const EditProduct = () => {
               <label className="label">
                 <span className="label-text font-bold">Image</span>
               </label>
-              <input type="file" name="img" placeholder="image URL"className="input input-bordered" required />
+              <input type="text" name="img" placeholder="image URL" value={image} onChange={(e)=>setImage(e.target.value)} className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
