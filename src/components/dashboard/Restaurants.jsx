@@ -10,7 +10,7 @@ const Restaurants = ({data, search}) => {
          {
            // eslint-disable-next-line react/prop-types
            data?.filter((food)=>{
-            return search?.toLowerCase()===''
+            return search?.toLowerCase()=== ""
             ? food
             : food.food_name?.toLowerCase().includes(search);
           })

@@ -9,9 +9,10 @@ import EditProduct from "../pages/EditProduct";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
-import FoodDetail from "../pages/FoodDetail";
+// import FoodDetail from "../pages/FoodDetail";
 import GoogleMap from "../pages/GoogleMap";
 import ManageProducts from "../pages/ManageProducts";
+import FoodList from "../components/dashboard/FoodList";
 
 export const router = createBrowserRouter(
     [
@@ -47,36 +48,36 @@ export const router = createBrowserRouter(
             errorElement: <ErrorPage/>,
             children:[
                 {
-                    path: "/dashboard",
+                    path: "/food",
                     element: <Dashboard/>,
-                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                    loader:()=> fetch("http://localhost:5000/food"),
                  },
                  {
-                    path: "/dashboard/food/:id",
-                    element: <FoodDetail/>,
-                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
-                 },
+                    path: "/food/:id",
+                    element: <FoodList/>,
+                    loader:({params})=>fetch(`http://localhost:5000/food/${params.id}`), 
+                },
                  {
-                    path: "/dashboard/add-product",
+                    path: "/food/add-product",
                     element:<AddProduct/>,
-                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                    loader:()=> fetch("http://localhost:5000/food"),
                   },
                  {
-                    path: "/dashboard/google-map",
+                    path: "/food/google-map",
                     element:<GoogleMap/>,
-                    // loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                  {
-                    path: "/dashboard/manage-products",
+                    path: "/food/manage-products",
                     element:<ManageProducts/>,
-                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
+                    loader:()=> fetch("http://localhost:5000/food"),
                   },
                   {
-                    path: "/dashboard/manage-products/:id",
+                    path: "/food/manage-products/:id",
                     element:<EditProduct/>,
-                    loader:({params})=>fetch(`http://localhost:5000/dashboard/food/${params.id}`),
+                    loader:({params})=>fetch(`http://localhost:5000/food/${params.id}`),
                   },
             ]
-        }
+        },
     ]
 )

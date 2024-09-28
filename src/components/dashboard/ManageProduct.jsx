@@ -3,6 +3,7 @@ import { GiDeliveryDrone } from "react-icons/gi";
 import Rating from "./Rating";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import PropTypes from "prop-types";
 
 const ManageProduct = ({food, onDelete}) => {
     const {_id, restaurant_name, popularity, delivery_time,  distance, delivery_cost, cuisine_type, image} = food;
@@ -34,7 +35,7 @@ const ManageProduct = ({food, onDelete}) => {
         <div>
             <div className="card bg-base-100 w-72 max-h-[350px] shadow-xl">
   <figure>
-    <img className="max-h-32 rounded-3xl mt-6"
+    <img className="max-h-32 rounded-full mt-6"
       src={image}
       alt="Shoes" />
   </figure>
@@ -50,13 +51,19 @@ const ManageProduct = ({food, onDelete}) => {
         <small>< FaWalking className="inline-flex mr-2"/>{distance}</small>
     </div>
     <div className="card-actions justify-end mt-2">
-    <button className="mr-2 bg-[#12CBC4] px-4 rounded"><Link to={`/dashboard/manage-products/${_id}`}>Edit</Link></button>
+    <button className="mr-2 bg-[#12CBC4] px-4 rounded"><Link to={`/food/manage-products/${_id}`}>Edit</Link></button>
       <button onClick={handleDelete} className="bg-[#ED4C67]  px-2 rounded">Delete</button>
     </div>
   </div>
 </div>
         </div>
     );
+};
+
+
+ManageProduct.propTypes = {
+  food: PropTypes.object.isRequired,
+  onDelete: PropTypes.func,
 };
 
 export default ManageProduct;
