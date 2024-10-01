@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaFire } from 'react-icons/fa';
 import { LuDot } from 'react-icons/lu';
 
-const FoodItems = ({foodItem}) => {
+const FoodItems = ({foodItem, handleAddToCart}) => {
     console.log(foodItem)
    const {food_name, food_description, category, previous_price, present_price, isPopular, image} = foodItem
     return (
@@ -30,7 +30,7 @@ const FoodItems = ({foodItem}) => {
  </div>
  <p className='text-left mt-2 ml-2'>{food_description}</p>
  <div className="card-actions justify-start my-4">
- <button className="bg-[#12CBC4] p-4 rounded-xl ml-2">Detail</button>
+ <button onClick={()=>handleAddToCart(foodItem)} className="bg-[#12CBC4] p-4 rounded-xl ml-2 capitalize">add to cart</button>
  </div>
 </div>
   </div>
@@ -38,7 +38,8 @@ const FoodItems = ({foodItem}) => {
 };
 
 FoodItems.propTypes = {
-   foodItem: PropTypes.object.isRequired, 
+   foodItem: PropTypes.object.isRequired,
+   handleAddToCart: PropTypes.func, 
 };
 
 export default FoodItems;

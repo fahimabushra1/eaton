@@ -8,11 +8,36 @@ import { GiDeliveryDrone } from 'react-icons/gi';
 import Offers from './Offers';
 import FoodItems from './FoodItems';
 import OrdersReview from './OrdersReview';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const FoodList = () => {
     const foods = useLoaderData();
   console.log(foods)
   const {restaurant_name, popularity, delivery_time, offers,  address, distance, delivery_cost, cuisine_type, image, food} = foods;
+
+const [carts, setCarts] = useState([]);
+
+const handleAddToCart = (cart) =>{
+  const isAlreadyAdded = carts.filter(item => item.id == cart.id);
+
+
+  if(isAlreadyAdded){
+    toast('This recipe is already enlisted', {
+      style: {
+        border: '1px solid #0BE58A',
+        padding: '16px',
+        color: '#0BE58A',
+        borderRadius: '10px',
+        background: '#0f172a ',
+      },
+    });
+  }else{
+    setCarts([...carts, cart]);
+  }
+  
+}
+
     return (
         <div>
           {/* <div className="card w-full shadow-xl mx-4"> */}
@@ -53,7 +78,7 @@ const FoodList = () => {
 
 {/* different offers */}
 
-<div className='grid grid-cols-3 gap-2'>
+<div className='grid grid-cols-3 gap-2 ml-4'>
 {
   offers?.map((offer, idx) => <Offers key={idx} offerr={offer} />)
 }
@@ -61,20 +86,21 @@ const FoodList = () => {
 
 {/* food items card and numbers of order */}
 
-<div className='flex'>
+<div className='flex mt-8'>
   <div className='w-3/4'>
-  <h2 className="text-3xl font-bold my-4 ml-4 capitalize">Food you like</h2>
+  <h2 className="text-3xl font-bold my-4 pl-4 capitalize bg-gradient-to-r from-[#ED4C67] via-[#ed4cdd] to-[#836ae7]">Food you like</h2>
 <div className='grid grid-cols-2 gap-2'>
   {
-food?.map(foodItem =><FoodItems key={foodItem._id} foodItem={foodItem} />)
+food?.map(foodItem =><FoodItems key={foodItem._id} foodItem={foodItem}
+  handleAddToCart={handleAddToCart} />)
   }
 </div>
 </div>
-<div className='bg-orange-500 w-2/5'>
-<h2 className="text-3xl font-bold my-4 ml-4 capitalize">your orders</h2>
+<div className='w-2/5'>
+<h2 className="text-3xl font-bold my-4 pl-4 capitalize bg-[#836ae7]">your orders</h2>
 <div>
   {
-food?.map(foodItem =><OrdersReview key={foodItem._id} foodItem={foodItem} />)
+carts?.map((cart, idx) =><OrdersReview key={idx} cart={cart}/>)
   }
 </div>
 </div>

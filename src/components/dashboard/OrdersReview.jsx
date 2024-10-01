@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 
-const OrdersReview = ({foodItem}) => {
-    console.log(foodItem);
-    const {image, food_name, present_price} = foodItem;
+const OrdersReview = ({cart}) => {
+    console.log(cart);
+    const {image, food_name, present_price} = cart;
     return (
         <div className='grid grid-cols-4 gap-2 items-center'>
             <div>
@@ -27,7 +27,7 @@ const OrdersReview = ({foodItem}) => {
 };
 
 OrdersReview.propTypes = {
-    foodItem: PropTypes.object.isRequired,
+    cart: PropTypes.object.isRequired,
 };
 
 export default OrdersReview;
