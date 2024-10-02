@@ -19,24 +19,27 @@ const FoodList = () => {
 const [carts, setCarts] = useState([]);
 
 const handleAddToCart = (cart) =>{
-  const isAlreadyAdded = carts.filter(item => item.id == cart.id);
+  console.log(cart)
+//   const isAlreadyAdded = carts?.find(item => item.id !== cart.id);
+//  console.log(isAlreadyAdded)
 
+  // if(!isAlreadyAdded){
 
-  if(isAlreadyAdded){
-    toast('This recipe is already enlisted', {
-      style: {
-        border: '1px solid #0BE58A',
-        padding: '16px',
-        color: '#0BE58A',
-        borderRadius: '10px',
-        background: '#0f172a ',
-      },
-    });
-  }else{
     setCarts([...carts, cart]);
-  }
-  
-}
+
+  //     }
+      // else{
+      //   toast('This recipe is already enlisted', {
+      //     style: {
+      //       border: '1px solid #0BE58A',
+      //       padding: '16px',
+      //       color: '#0BE58A',
+      //       borderRadius: '10px',
+      //       background: '#0f172a ',
+      //     },
+      //   });
+      // }
+    }
 
     return (
         <div>
@@ -91,17 +94,21 @@ const handleAddToCart = (cart) =>{
   <h2 className="text-3xl font-bold my-4 pl-4 capitalize bg-gradient-to-r from-[#ED4C67] via-[#ed4cdd] to-[#836ae7]">Food you like</h2>
 <div className='grid grid-cols-2 gap-2'>
   {
-food?.map(foodItem =><FoodItems key={foodItem._id} foodItem={foodItem}
+food?.map((foodItem, idx) =><FoodItems key={idx} foodItem={foodItem}
   handleAddToCart={handleAddToCart} />)
   }
 </div>
 </div>
 <div className='w-2/5'>
 <h2 className="text-3xl font-bold my-4 pl-4 capitalize bg-[#836ae7]">your orders</h2>
-<div>
+<div className='max-h-80 overflow-auto bg-slate-200'>
   {
 carts?.map((cart, idx) =><OrdersReview key={idx} cart={cart}/>)
   }
+</div>
+<p className="font-bold capitalize">Total:</p>
+<div className='mt-6 mx-auto w-full bg-[#12CBC4] p-4 rounded-xl text-center'>
+<Link to={"/food/checkout"} className='capitalize font-bold'>checkout orders</Link>
 </div>
 </div>
 </div>

@@ -6,7 +6,8 @@ const OrdersReview = ({cart}) => {
     console.log(cart);
     const {image, food_name, present_price} = cart;
     return (
-        <div className='grid grid-cols-4 gap-2 items-center'>
+        <div>
+             <div className='grid grid-cols-4 gap-2 items-center'>
             <div>
                 <img className='w-14 rounded-full ml-2' src={image} alt="food item" />
             </div>
@@ -22,6 +23,8 @@ const OrdersReview = ({cart}) => {
             <div className='ml-8'>
             <RiDeleteBin6Line />
             </div>
+            </div>
+         <p className='capitalize'>sub total:</p>
         </div>
     );
 };

@@ -9,10 +9,10 @@ import EditProduct from "../pages/EditProduct";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import LoginRegistrationLayout from "../layouts/LoginRegistrationLayout";
-// import FoodDetail from "../pages/FoodDetail";
 import GoogleMap from "../pages/GoogleMap";
 import ManageProducts from "../pages/ManageProducts";
 import FoodList from "../components/dashboard/FoodList";
+import Checkout from "../pages/Checkout";
 
 export const router = createBrowserRouter(
     [
@@ -58,6 +58,10 @@ export const router = createBrowserRouter(
                     loader:({params})=>fetch(`http://localhost:5000/food/${params.id}`), 
                 },
                  {
+                    path: "/food/checkout",
+                    element: <Checkout/>, 
+                },
+                 {
                     path: "/food/add-product",
                     element:<AddProduct/>,
                     loader:()=> fetch("http://localhost:5000/food"),
@@ -65,7 +69,6 @@ export const router = createBrowserRouter(
                  {
                     path: "/food/google-map",
                     element:<GoogleMap/>,
-                    loader:()=> fetch("http://localhost:5000/dashboard/food"),
                   },
                  {
                     path: "/food/manage-products",
